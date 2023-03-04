@@ -2,6 +2,7 @@ import ClassCard from "./ClassCard"
 import {AiOutlineArrowRight,AiOutlineArrowDown} from 'react-icons/ai'
 import Divider from '@mui/material/Divider';
 import UpperDivCard from './UpperDivCard'
+import CapstoneCard from './CapstoneCard'
 
 const ClassTree = (props) => {
   return (
@@ -494,10 +495,45 @@ Disciplinary Communication list cannot also be used to satisfy an Upper Division
             </div>
 
              {/* End of Upper Div Cards */}
+
+
              <Divider color="#66FCF1"/>
 
+             <div className="self-center mt-12 flex flex-col justify-center align-center">
+                <h1 className="text-3xl mb-4 ">Capstone Courses</h1>
+                <p className="text-md mb-4 self-center">Many Capstone course options require additional prerequisites not already
+required in major requirements. Advance planning is crucial. </p>
+
+                <p className="text-md mb-4 self-center">These courses can be used to satisfy Upper Division Electives. </p>
+                
+            </div>
+
+            
+            <div className=" flex flex-col justify-center align-center ">
+            
+            
+            <div className="flex justify-between align-center">
+
+            <div className =" mt-4">
+            <CapstoneCard 
+            first={true}
+            />
+            
+            
+            </div>
+
+            <div className =" mt-4">
+            <CapstoneCard first={false}
+            />
+            
+            
+            </div>
+            </div>
+            </div>
+            <Divider color="#66FCF1"/>
 
 
+            
 
             </div>
 
