@@ -63,6 +63,12 @@ const ClassCard = (props) => {
           <Typography fontSize="md" fontWeight="lg">
             {props.PreReqs}
           </Typography>
+          <Typography fontSize="lg" fontWeight="lg" >
+            {props.GE}
+          </Typography>
+          <Typography fontSize="lg" fontWeight="lg" >
+            {props.QO}
+          </Typography>
         </div>
         <Button
           variant="solid"
