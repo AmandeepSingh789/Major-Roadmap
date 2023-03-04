@@ -454,7 +454,7 @@ const ClassTree = (props) => {
             <div className="self-center mt-12 mb-8">
                 <h1 className="text-3xl mb-4 ">Upper Division Electives</h1>
                 <p className="text-md mb-4">5 credit (or more than 5 credit) upper-division computer science or computer engineering (CSE) courses with
-a course number below 170, or between 180-189, or CSE 195, or some courses from the Computational Media electives. Up to two of these electives may be replaced by upper-division mathematics electives listed on the back. </p>
+a course number below 170, or between 180-189, or CSE 195, or some courses from the Computational Media electives. Up to two of these electives may be replaced by some upper-division mathematics electives. </p>
 
                 <p className="text-md mb-4">
                 Courses from the
@@ -467,13 +467,14 @@ Disciplinary Communication list cannot also be used to satisfy an Upper Division
 
 
             {/* Start of Upper Div Cards */}
-            <div className="p-2 flex justify-content align-center mt-12">
-            <UpperDivCard />
+            <div className="p-2 flex justify-around align-center mt-12">
+            <UpperDivCard 
+            upper = {true} />
             
 
             <div className ="ml-4">
             
-            <UpperDivCard />
+            <UpperDivCard  upper = {true} />
             </div>
                 
             </div>
@@ -481,13 +482,13 @@ Disciplinary Communication list cannot also be used to satisfy an Upper Division
              {/* End of Upper Div Cards */}
 
              {/* Start of Upper Div Cards */}
-            <div className="p-2 flex justify-content align-center mt-12 mb-8">
-            <UpperDivCard />
+            <div className="p-2 flex justify-around align-center mt-12 mb-8">
+            <UpperDivCard upper = {false}/>
             
 
             <div className ="ml-4">
             
-            <UpperDivCard />
+            <UpperDivCard upper = {false}/>
             </div>
                 
             </div>
