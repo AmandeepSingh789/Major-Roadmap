@@ -79,7 +79,7 @@ const ClassCard = (props) => {
           href={props.Link}
           
         >
-          <a href={props.Link} target="_blank" className='border-2 p-2  border-[#66FCF1] rounded hover:bg-[#1F2833] ml-4'>
+          <a href={props.Link} target="_blank" className='border-2 p-2  border-[#66FCF1] rounded hover:bg-[#45A29E] duration-500 ml-4'>
             Know More
             </a>
         </Button>

@@ -9,6 +9,9 @@ module.exports = {
         Professional: ['Climate Crisis', 'cursive'],
         Roboto:['Roboto Condensed','sans-serif']
     },
+    // backgroundImage: {
+    //   'hero': "url('./src/assets/bg.jpeg')",
+    // },
     },
   },
   plugins: [],

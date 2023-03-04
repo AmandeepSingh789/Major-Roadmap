@@ -143,8 +143,61 @@ const ClassTree = (props) => {
             </div>
 
             {/* End of Div With Math 23A */}
+
+
+            {/* Start of Div With CSE 12 AND CSE 13 */}
+            
+            <div className="p-2 flex justify-content align-center mt-12">
+            <ClassCard
+                Code="CSE12"
+                Name ="Computer Systems and Assembly Language"
+                Link = "https://ucsc.smartcatalogiq.com/2019-2020/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Lower-Division/CSE-12"
+                Level = "4/5"
+                PreReqs= "Prerequisite(s): previous or concurrent enrollment in CSE 12L is required."
+                QO="Quarter Offered: Fall, Winter, Spring, Summer"
+                />
+
+            <div className="text-3xl ml-4 self-center">
+            <AiOutlineArrowRight />
+            </div>
+
+            <div className ="ml-4">
+            
+            <ClassCard
+                Code="CSE 13"
+                Name ="Computer Systems and C Programming"
+                Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Lower-Division/CSE-13S"
+                Level = "4.5/5"
+                PreReqs= "Prerequisite(s): CSE 12 or BME 160"
+                QO="Quarter Offered: Fall, Winter, Spring"
+                />
+            </div>
+                
+            </div>
+            {/* End of Div With CSE 20 AND CSE 30 */}
+            <div className="self-center mt-12">
+                {/* divider ELement */}
+                <h1 className="text-3xl mb-4">Upper Division </h1></div>
+
+                <div className="p-2 flex justify-center align-center mt-12">
+            <ClassCard
+                Code="CSE101"
+                Name ="Introduction to Data Structures and Algorithms"
+                Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-101"
+                Level = "4/5"
+                PreReqs= "Prerequisite(s): CSE 12 or BME 160; CSE 13E or ECE 13 or CSE 13S; and CSE 16; and CSE 30; and MATH 11B or MATH 19B or MATH 20B or AM 11B"
+                QO="Quarter Offered: Fall, Winter, Spring"
+                />
+
+            
+
+           
+                
+            </div>
+            </div>
+
+            
         
-        </div>
         {/* Div With Qualification Courses */}
         
     </div>
