@@ -8,13 +8,25 @@ import Paper from '@mui/material/Paper';
 import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import blue from '@mui/material/colors/blue';
 
-const options = ['Create a merge commit', 'Squash and merge', 'Rebase and merge'];
+const theme = createTheme({
+  palette: {
+    primary: {
+        // light: will be calculated from palette.primary.main,
+        main: '#1F2833',
+        // dark: will be calculated from palette.primary.main,
+        // contrastText: will be calculated to contrast with palette.primary.main
+      },
+  },
+});
+const options = ['Choose A Major', 'Computer Science BS', 'Computer Science BA'];
 
 export default function MajorPicker() {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
-  const [selectedIndex, setSelectedIndex] = React.useState(1);
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   const handleClick = () => {
     console.info(`You clicked ${options[selectedIndex]}`);
@@ -33,14 +45,16 @@ export default function MajorPicker() {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }
-
     setOpen(false);
   };
 
   return (
     <React.Fragment>
+        <ThemeProvider theme={theme}>
       <ButtonGroup variant="contained" ref={anchorRef} aria-label="split button">
-        <Button onClick={handleClick}>{options[selectedIndex]}</Button>
+        <Button 
+        color='primary'
+        onClick={handleClick}>{options[selectedIndex]}</Button>
         <Button
           size="small"
           aria-controls={open ? 'split-button-menu' : undefined}
@@ -48,6 +62,8 @@ export default function MajorPicker() {
           aria-label="select merge strategy"
           aria-haspopup="menu"
           onClick={handleToggle}
+          color='primary'
+          
         >
           <ArrowDropDownIcon />
         </Button>
@@ -61,6 +77,7 @@ export default function MajorPicker() {
         role={undefined}
         transition
         disablePortal
+        color='primary'
       >
         {({ TransitionProps, placement }) => (
           <Grow
@@ -76,9 +93,10 @@ export default function MajorPicker() {
                   {options.map((option, index) => (
                     <MenuItem
                       key={option}
-                      disabled={index === 2}
+                      color='primary'
                       selected={index === selectedIndex}
                       onClick={(event) => handleMenuItemClick(event, index)}
+                      
                     >
                       {option}
                     </MenuItem>
@@ -89,6 +107,8 @@ export default function MajorPicker() {
           </Grow>
         )}
       </Popper>
+      </ThemeProvider>
     </React.Fragment>
+    
   );
 }
