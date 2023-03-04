@@ -9,6 +9,11 @@ module.exports = {
         Professional: ['Climate Crisis', 'cursive'],
         Roboto:['Roboto Condensed','sans-serif']
     },
+    boxShadow: {
+      "custom":'rgba(102, 252, 241, 0.4) -5px 5px, rgba(102, 252, 241, 0.3) -10px 10px, rgba(102, 252, 241, 0.2) -15px 15px, rgba(102, 252, 241, 0.1) -20px 20px, rgba(102, 252, 241, 0.05) -25px 25px;',
+      custom2:'rgba(102, 252, 241, 0.4) 0px 5px, rgba(102, 252, 241, 0.3) 0px 10px, rgba(102, 252, 241, 0.2) 0px 15px, rgba(102, 252, 241, 0.1) 0px 20px, rgba(102, 252, 241, 0.05) 0px 25px;'
+    },
+
     // backgroundImage: {
     //   'hero': "url('./src/assets/bg.jpeg')",
     // },

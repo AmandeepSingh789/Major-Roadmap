@@ -33,7 +33,7 @@ const theme = extendTheme({
 const CapstoneCard = (props) => {
   return (
     <div>
-      <Card variant="outlined" sx={{ width: 320 }}>
+      <div className='w-[320px] border-2 p-4 rounded-2xl border-[#66FCF1] shadow-md shadow-current hover:shadow-2xl hover:shadow-[#66FCF1] duration-500' >
      
       <Typography level="body2">
 
@@ -219,7 +219,7 @@ const CapstoneCard = (props) => {
       </Typography>
       
       
-    </Card>
+    </div>
     </div>
   )
 }

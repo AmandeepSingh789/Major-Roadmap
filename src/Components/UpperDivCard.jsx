@@ -33,7 +33,7 @@ const theme = extendTheme({
 const UpperDivCard = (props) => {
   return (
     <div>
-      <Card variant="outlined" sx={{ width: 320 }}>
+      <div className='w-[320px] border-2 p-4 rounded-2xl border-[#66FCF1] shadow-md shadow-current hover:shadow-2xl hover:shadow-[#66FCF1] duration-500' >
       <Typography level="h1" fontSize="xl" sx={{ mb: 0.5 }}>
       Any upper-division computer science or computer engineering (CSE) courses with
 a course number below 170, or between 180-189, or CSE 195 or one from the following list:
@@ -202,7 +202,7 @@ a course number below 170, or between 180-189, or CSE 195 or one from the follow
       </Typography>
       
       
-    </Card>
+    </div>
     </div>
   )
 }

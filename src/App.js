@@ -2,6 +2,7 @@ import * as React from 'react';
 import MajorPicker from './Components/MajorPicker';
 import ClassTree from './Components/ClassTree';
 import bg from './assets/bg.jpeg'
+
 function App() {
   
   return (

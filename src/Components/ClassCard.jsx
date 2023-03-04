@@ -7,6 +7,9 @@ import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
 import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
 import { CssVarsProvider, extendTheme } from '@mui/joy/styles';
+import Stack from '@mui/material/Stack';
+import CircularProgress from '@mui/material/CircularProgress';
+
 
 const theme = extendTheme({
   components: {
@@ -30,45 +33,56 @@ const theme = extendTheme({
 });
 
 const ClassCard = (props) => {
+  let v1 = (Math.min(props.Level *100 ,100))
+  let v2 = (Math.min(props.Level *100 -100,100))
+  let v3 = (Math.min(props.Level *100 -200,100))
+  let v4 = (Math.min(props.Level *100 -300,100))
+  let v5 = (Math.min(props.Level *100 -400,100))
+  v1 = v1 < 0 ? 0 : v1;
+  v2 = v2 < 0 ? 0 : v2;
+  v3 = v3 < 0 ? 0 : v3;
+  v4 = v4 < 0 ? 0 : v4;
+  v5 = v5 < 0 ? 0 : v5;
   return (
     <div>
-      <Card variant="outlined" sx={{ width: 320 }}>
-      <Typography level="h1" fontSize="xl" sx={{ mb: 0.5 }}>
+      <div className='w-[320px] border-2 p-4 rounded-2xl border-[#66FCF1] shadow-custom2 hover:shadow-custom hover:translate-y-[-20px] hover:translate-x-2 duration-500' >
+      
+      <div>
+      <h1 className='text-xl text-[#66FCF1] md:text-2xl font-extrabold' >
         {props.Code}
-      </Typography>
-      <Typography level="body2">{props.Name}</Typography>
-      <IconButton
-        aria-label="bookmark Bahamas Islands"
-        variant="plain"
-        color="neutral"
-        size="sm"
-        sx={{ position: 'absolute', top: '0.5rem', right: '0.5rem' }}
-      >
-        <BookmarkAdd />
-      </IconButton>
-      {/* <AspectRatio minHeight="120px" maxHeight="200px" sx={{ my: 2 }}>
-        <img
-          src="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286"
-          srcSet="https://images.unsplash.com/photo-1527549993586-dff825b37782?auto=format&fit=crop&w=286&dpr=2 2x"
-          loading="lazy"
-          alt=""
-        />
-      </AspectRatio> */}
-      <Box sx={{ display: 'flex' }}>
-        <div>
-          <Typography level="body3">Difficulty Level:</Typography>
-          <Typography fontSize="lg" fontWeight="lg">
-            {props.Level}
-          </Typography>
-          <Typography fontSize="md" fontWeight="lg">
+      </h1>
+      {/* sx={{ mb: 0.5 }} */}
+      </div>
+      
+      <div className='flex justify-center align-center my-4 text-lg'>{props.Name}</div>
+
+      <div className='flex flex-col justify-center align-center'>
+        <div className='flex flex-col justify-center align-center'>
+          <div className='flex justify-center align-center text-xl ' >Difficulty Level</div>
+          <div className='my-4 justify-center align-center'>
+          
+
+          <Stack spacing={2} direction="row" sx={{ color: '#66FCF1' }}>
+          <CircularProgress variant="determinate" value={v1} color="inherit" />
+          <CircularProgress variant="determinate" value={v2} color="inherit"   />
+          <CircularProgress variant="determinate" value={v3} color="inherit"  />
+          <CircularProgress variant="determinate" value={v4} color="inherit"  />
+          <CircularProgress variant="determinate" value={v5} color="inherit"  />
+    </Stack> 
+          </div>
+          
+          <div className='text-lg mb-4'>
             {props.PreReqs}
-          </Typography>
-          <Typography fontSize="lg" fontWeight="lg" >
+          </div>
+
+          <div className='text-lg mb-4' >
             {props.GE}
-          </Typography>
-          <Typography fontSize="lg" fontWeight="lg" >
+          </div>
+
+          <div className='text-lg mb-4' >
             {props.QO}
-          </Typography>
+          </div>
+
         </div>
         <Button
           variant="solid"
@@ -79,12 +93,12 @@ const ClassCard = (props) => {
           href={props.Link}
           
         >
-          <a href={props.Link} target="_blank" className='border-2 p-2  border-[#66FCF1] rounded hover:bg-[#45A29E] duration-500 ml-4'>
+          <a href={props.Link} target="_blank" className='border-2 p-2  border-[#66FCF1] rounded hover:bg-[#2a5e5c] duration-500 ml-4'>
             Know More
             </a>
         </Button>
-      </Box>
-    </Card>
+      </div>
+    </div>
     </div>
   )
 }
