@@ -15,7 +15,10 @@ function App() {
       <div className='flex justify-center align-center mt-12'> 
         <MajorPicker/>
       </div>
+      <div className='flex justify-center align-center mt-12'>
       <ClassTree path="CS BA"/>
+      </div>
+      
       
       
       
