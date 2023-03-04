@@ -1,9 +1,11 @@
 import ClassCard from "./ClassCard"
 import {AiOutlineArrowRight,AiOutlineArrowDown} from 'react-icons/ai'
+import Divider from '@mui/material/Divider';
+import UpperDivCard from './UpperDivCard'
 
 const ClassTree = (props) => {
   return (
-    <div className='flex justify-content align-center text-[#fff]'>
+    <div className='flex justify-content align-center text-[#fff] w-[740px]'>
         <div className="flex flex-col justify-content align-center">
             {/* Div With Qualification Courses */}
             <div className="self-center">
@@ -147,7 +149,7 @@ const ClassTree = (props) => {
 
             {/* Start of Div With CSE 12 AND CSE 13 */}
             
-            <div className="p-2 flex justify-content align-center mt-12">
+            <div className="p-2 flex justify-content align-center mt-12 mb-4">
             <ClassCard
                 Code="CSE12"
                 Name ="Computer Systems and Assembly Language"
@@ -175,9 +177,9 @@ const ClassTree = (props) => {
                 
             </div>
             {/* End of Div With CSE 20 AND CSE 30 */}
-
+            <Divider color="#66FCF1"/>
             <div className="self-center mt-12">
-                {/* divider ELement */}
+    
                 <h1 className="text-3xl mb-4">Upper Division </h1></div>
 
             {/* Start of CSE 101 and CSE 120*/}
@@ -340,7 +342,7 @@ const ClassTree = (props) => {
 
             {/* Start of CSE 107 and Stat 131 */}
 
-            <div className="p-2 flex justify-content align-center mt-12">
+            <div className="p-2 flex justify-content align-center mt-12 mb-4">
             <ClassCard
                 Code="CSE 107"
                 Name ="Probability and Statistics for Engineers"
@@ -371,7 +373,130 @@ const ClassTree = (props) => {
                 
             </div>
             {/* End of CSE 107 and Stat 131 */}
+        {/* Divider */}
+        <Divider color="#66FCF1"/>
+            <div className="self-center mt-12">
+                
+                <h1 className="text-3xl mb-4">Disciplinary Communication Requirement (DC)</h1>
+                <p className="text-md mb-4">Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) Requirement. </p>
+            </div>
             
+
+            {/* Start of CSE 115A and CSE 185 */}
+
+            <div className="p-2 flex justify-content align-center mt-12">
+            <ClassCard
+                Code="CSE 115A"
+                Name ="Introduction to Software Engineering"
+                Link = "https://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-115A"
+                Level = "3.5/5"
+                PreReqs= "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and CSE 101 and CSE 130."
+                QO= "Fall, Winter, Spring"
+                />
+
+            <div className="text-3xl ml-4 self-center">
+            OR
+            </div>
+
+            <div className ="ml-4">
+            
+            <ClassCard
+                Code="CSE 185"
+                Name ="Technical Writing for Computer Science and Engineering"
+                Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-185E"
+                Level = "3.5/5"
+                PreReqs= "Prerequisite(s): satisfaction of Entry Level Writing and Composition requirements; and CSE 12 or CSE 15 or CSE 30 or BME 160 or by permission of the instructor. Enrollment is restricted to computer engineering, bioengineering, bioinformatics, biomolecular engineering and bioinformatics, or network and digital technology majors."
+                QO="Quarter Offered: Fall, Winter, Spring"
+                />
+            </div>
+                
+            </div>
+            {/* End of CSE 115A and CSE 185 */}
+
+            {/* Start of CSE 195 */}
+            <div className=" flex flex-col justify-center align-center mb-8 ">
+            <div className=" flex justify-center align-center mt-4">
+                
+                
+                <div className="text-3xl ">OR</div>
+                
+                </div>
+            
+            <div className="flex justify-center align-center">
+
+            <div className =" mt-4">
+            <ClassCard
+            Code="CSE 195"
+            Name ="Senior Thesis Research"
+            Link = "https://ucsc.smartcatalogiq.com/en/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-195"
+            Level = "4/5 "
+            PreReqs= " Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements. Computer Engineering majors, CSE 123A or CSE 129A."
+            QO="Quarter Offered: Fall, Winter, Spring"
+            />
+            </div>
+            </div>
+            </div>
+            
+            {/* End of CSE 195 */}
+            <Divider color="#66FCF1"/>
+            <div className="self-center mt-12 mb-8">
+                
+                <h1 className="text-3xl mb-4 "> Important Note.</h1>
+                <p className="text-md mb-4">The capstone course can count toward 1 of the 4 required upper division electives. </p>
+
+                <p className="text-md mb-4">
+                CSE 195 can satisfy the DC requirement OR an Upper Division Elective, but NOT both
+                </p>
+            </div>
+
+            <Divider color="#66FCF1"/>
+
+            <div className="self-center mt-12 mb-8">
+                <h1 className="text-3xl mb-4 ">Upper Division Electives</h1>
+                <p className="text-md mb-4">5 credit (or more than 5 credit) upper-division computer science or computer engineering (CSE) courses with
+a course number below 170, or between 180-189, or CSE 195, or some courses from the Computational Media electives. Up to two of these electives may be replaced by upper-division mathematics electives listed on the back. </p>
+
+                <p className="text-md mb-4">
+                Courses from the
+Disciplinary Communication list cannot also be used to satisfy an Upper Division Elective
+                </p>
+                
+            </div>
+            <Divider color="#66FCF1"/>
+
+
+
+            {/* Start of Upper Div Cards */}
+            <div className="p-2 flex justify-content align-center mt-12">
+            <UpperDivCard />
+            
+
+            <div className ="ml-4">
+            
+            <UpperDivCard />
+            </div>
+                
+            </div>
+
+             {/* End of Upper Div Cards */}
+
+             {/* Start of Upper Div Cards */}
+            <div className="p-2 flex justify-content align-center mt-12 mb-8">
+            <UpperDivCard />
+            
+
+            <div className ="ml-4">
+            
+            <UpperDivCard />
+            </div>
+                
+            </div>
+
+             {/* End of Upper Div Cards */}
+             <Divider color="#66FCF1"/>
+
+
+
 
             </div>
 
