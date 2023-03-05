@@ -741,15 +741,210 @@ required in major requirements. Advance planning is crucial. </p>
 
 {/* Start Of Breadth Courses */}
 
-<div className="self-center mt-12">
+            <div className="self-center mt-12">
   
-              <h1 className="text-3xl mb-4 font-Tilt">Breadth courses </h1></div>
+              <h1 className="text-3xl mb-4 font-Tilt">Breadth courses </h1>
+              </div>
               <p className="text-md mb-4 self-center">Students must complete three courses from these options.</p>
-              <div className="p-2 flex justify-content align-center mt-12">
+              <div className="p-2 flex justify-between align-center mt-12 grid-cols-2 ">
+              <div className='mb-4'>
+              <ClassCard
+              Code="CSE 102"
+              Name ="Introduction to Analysis of Algorithms"
+              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-102"
+              Level = "4.5"
+              PreReqs= "Prerequisite(s): CSE 101."
+              QO= "Quarter Offered: Fall, Winter, Spring"
+              />
+                  
+                  </div>
+                  <div className="center-self justify-self-center mb-4">
+                  <ClassCard
+              Code="CSE 103A"
+              Name ="Computational Models"
+              Link = "https://ucsc.smartcatalogiq.com/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-103"
+              Level = "4"
+              PreReqs= "Prerequisite(s): CSE 101."
+              QO= "Quarter Offered: Fall, Winter, Spring"
+              />
+                  </div>
                   </div>
 
 
+            
 
+                  <div className="p-2 flex justify-between align-center mt-12 grid-cols-2 ">
+              <div className='mb-4'>
+              <ClassCard
+              Code="CSE 110A"
+              Name ="Fundamentals of Compiler Design I"
+              Link = "https://ucsc.smartcatalogiq.com/en/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-110A"
+              Level = "3.5"
+              PreReqs= "Prerequisite(s): CSE 12 and CSE 101."
+              QO= "Quarter Offered: Winter, Spring"
+              />
+                  
+                  </div>
+                  <div className="center-self justify-self-center mb-4">
+                  <ClassCard
+              Code="CSE 112"
+              Name ="Comparative Programming Languages"
+              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-112"
+              Level = "3.5"
+              PreReqs= "Prerequisite(s): CSE 101."
+              />
+
+                  </div>
+                  </div>
+
+                  <div className="p-2 flex justify-between align-center mt-12 grid-cols-2 ">
+              <div className='mb-4'>
+              <ClassCard
+              Code="CSE 115A"
+              Name ="Introduction to Software Engineering"
+              Link = "https://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-115A"
+              Level = "3.5"
+              PreReqs= "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and CSE 101 and CSE 130."
+              QO= "Quarter Offered: Fall, Winter, Spring"
+              />
+                  
+                  </div>
+                  <div className="center-self justify-self-center mb-4">
+                  <ClassCard
+                    Code="CSE 120"
+                    Name ="Computer Architecture"
+                    Link = "https://ucsc.smartcatalogiq.com/2019-2020/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-120"
+                    Level = "3.5"
+                    PreReqs= "Prerequisite(s): CSE 12 and CSE 12L; and CSE 13E or CSE 13S or CSE 11 or CSE 14 and CSE 14L. CSE 16 recommended"
+                    QO="Quarter Offered: Fall, Winter, Spring"
+                    />
+
+
+                  </div>
+                  </div>
+
+                  <div className="p-2 flex justify-between align-center mt-12 grid-cols-2 ">
+              <div className='mb-4'>
+              <ClassCard
+              Code="CSE 130"
+              Name ="Principles of Computer Systems Design"
+              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-130"
+              Level = "4.5"
+              PreReqs= "Prerequisite(s): CSE 12; and CSE 101, or CSE 15 and CSE 15L; and knowledge of C programming language."
+              QO="Quarter Offered: Fall, Winter, Spring"
+              />
+                  
+                  </div>
+                  <div className="text-3xl ml-4 self-center">
+          OR
+          </div>
+
+          <div className ="ml-4">
+          
+          <ClassCard
+              Code="CSE 131"
+              Name ="Introduction to Operating Systems
+              "
+              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-114A"
+              Level = "4.5"
+              PreReqs= "Prerequisite(s): CSE 101 and CSE 120"
+              />
+          </div>
+
+                  </div>
+                  <div className="p-2 flex justify-between align-center mt-12 grid-cols-2 ">
+              <div className='mb-4'>
+              <ClassCard
+              Code="CSE 132"
+              Name ="Computer Security"
+              Link = "https://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-132"
+              Level = "3.5"
+              PreReqs= "Prerequisite(s): CSE 130 or CSE 131 or permission of instructor. Enrollment restricted to School of Engineering majors."
+              QO= "Quarter Offered: Fall"
+              />
+                  
+                  </div>
+                  <div className="center-self justify-self-center mb-4">
+                  <ClassCard
+                    Code="CSE 138"
+                    Name ="Distributed Systems"
+                    Link = "https://ucsc.smartcatalogiq.com/en/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-138"
+                    Level = "4"
+                    PreReqs= "Prerequisite(s): CSE 130 or CSE 131."
+                    QO="Quarter Offered: Winter"
+                    />
+
+
+                  </div>
+                  </div>
+
+                  
+                  <div className="p-2 flex justify-between align-center mt-12 grid-cols-2 ">
+              <div className='mb-4'>
+              <ClassCard
+              Code="CSE 140"
+              Name ="Artificial Intelligence"
+              Link = "hhttps://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-140"
+              Level = "4"
+              PreReqs= "Prerequisite(s): CSE 101."
+              QO= "Quarter Offered Winter, Spring"
+              />
+                  
+                  </div>
+                  <div className="center-self justify-self-center mb-4">
+                  <ClassCard
+                    Code="CSE 142"
+                    Name ="Machine Learning"
+                    Link = "https://ucsc.smartcatalogiq.com/2019-2020/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-142"
+                    Level = "4"
+                    PreReqs= "Prerequisite(s): CSE 101; and AM 30, or MATH 22, or MATH 23A; and STAT 131 or CSE 107."
+                    QO="Quarter Offered: Fall, Spring"
+                    />
+                  
+                  </div>
+                  </div>
+                  
+
+                  <div className="p-2 flex justify-between align-center mt-12 grid-cols-2 ">
+              <div className='mb-4'>
+              <ClassCard
+                    Code="CSE 143"
+                    Name ="Introduction to Natural Language Processing"
+                    Link = "https://ucsc.smartcatalogiq.com/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-143"
+                    Level = "4"
+                    PreReqs= "Prerequisite(s): CSE 101, and CSE 107 or STAT 131. Python competence equivalent to CSE 30 is highly recommended."
+                    QO="Quarter Offered: Winter, Spring"
+                    />
+                  
+                  </div>
+                  <div className="center-self justify-self-center mb-8">
+                  <ClassCard
+                    Code="CSE 160"
+                    Name ="Introduction to Computer Graphics"
+                    Link = "https://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-160"
+                    Level = "3"
+                    PreReqs= "Prerequisite(s): CSE 101 and MATH 21 or AM 10."
+                    QO="Quarter Offered: Fall, Spring"
+                    />
+                  </div>
+                  </div>
+
+                  <div className="p-2 flex justify-center align-center mt-12 grid-cols-2 ">
+              <div className='mb-4'>
+              <ClassCard
+                    Code="CSE 180"
+                    Name ="Database Systems I"
+                    Link = "https://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-180"
+                    Level = "4"
+                    PreReqs= "Prerequisite(s): CSE 101."
+                    QO="Quarter Offered: Fall, Winter"
+                    />
+                  
+                  </div>
+                  
+                  </div>
+
+{/* DC REQUIREMENT */}
 <Divider color="#66FCF1"/>
           <div className="self-center mt-12">
               
