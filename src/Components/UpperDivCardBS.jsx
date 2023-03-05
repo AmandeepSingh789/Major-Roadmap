@@ -2,7 +2,7 @@ import * as React from 'react';
 import Typography from '@mui/joy/Typography';
 
 
-const UpperDivCard = (props) => {
+const UpperDivCardBS = (props) => {
   return (
     <div>
       <div className='w-[320px] border-2 p-4 rounded-2xl border-[#66FCF1] shadow-custom2 hover:shadow-custom hover:translate-y-[-20px] hover:translate-x-2 duration-500' >
@@ -179,4 +179,4 @@ a course number below 170, or between 180-189, or CSE 195 or one from the follow
   )
 }
 
-export default UpperDivCard
+export default UpperDivCardBS

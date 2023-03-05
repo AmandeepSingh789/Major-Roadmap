@@ -1,7 +1,8 @@
 import ClassCard from "./ClassCard"
 import {AiOutlineArrowRight,AiOutlineArrowDown} from 'react-icons/ai'
 import Divider from '@mui/material/Divider';
-import UpperDivCard from './UpperDivCard'
+import UpperDivCardBS from './UpperDivCardBS'
+import UpperDivCardBA from "./UpperDivCardBA";
 import CapstoneCard from './CapstoneCard'
 
 const ClassTree = (props) => {
@@ -467,25 +468,25 @@ Disciplinary Communication list cannot also be used to satisfy an Upper Division
 
           {/* Start of Upper Div Cards */}
           <div className="p-2 flex justify-around align-center mt-12">
-          <UpperDivCard 
+          <UpperDivCardBS 
           upper = {true} />
           
 
           <div className ="ml-4">
           
-          <UpperDivCard  upper = {true} />
+          <UpperDivCardBS  upper = {true} />
           </div>
               
           </div>
 
            
           <div className="p-2 flex justify-around align-center mt-12 mb-8">
-          <UpperDivCard upper = {false}/>
+          <UpperDivCardBS upper = {false}/>
           
 
           <div className ="ml-4">
           
-          <UpperDivCard upper = {false}/>
+          <UpperDivCardBS upper = {false}/>
           </div>
               
           </div>
@@ -718,7 +719,7 @@ required in major requirements. Advance planning is crucial. </p>
               <h1 className="text-3xl mb-4 font-Tilt">Upper Division </h1></div>
 
               <div className=" flex flex-col justify-center align-center ">
-          
+          {/* Start of CSE 101 */}
           <div className="flex justify-center align-center mb-12">
 
           <div className =" mt-4">
@@ -734,200 +735,22 @@ required in major requirements. Advance planning is crucial. </p>
           </div>
           </div>
           </div>
+{/* End of CSE 101 */}
 
-          {/* Start of CSE 101 and CSE 120*/}
+<Divider color="#66FCF1"/>
 
-          <div className="p-2 flex justify-between align-center">
-          
-          <ClassCard
-              Code="CSE101"
-              Name ="Introduction to Data Structures and Algorithms"
-              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-101"
-              Level = "4"
-              PreReqs= "Prerequisite(s): CSE 12 or BME 160; CSE 13E or ECE 13 or CSE 13S; and CSE 16; and CSE 30; and MATH 11B or MATH 19B or MATH 20B or AM 11B"
-              QO="Quarter Offered: Fall, Winter, Spring"
-              />
+{/* Start Of Breadth Courses */}
 
-          <div className ="ml-4">
-
-          <ClassCard
-          Code="CSE 120"
-          Name ="Computer Architecture"
-          Link = "https://ucsc.smartcatalogiq.com/2019-2020/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-120"
-          Level = "3.5"
-          PreReqs= "Prerequisite(s): CSE 12 and CSE 12L; and CSE 13E or CSE 13S or CSE 11 or CSE 14 and CSE 14L. CSE 16 recommended"
-          QO="Quarter Offered: Fall, Winter, Spring"
-          />
-          </div>
-              
-          </div>
-          {/* End of CSE 101 and CSE 120*/}
-
-      {/* Start of CSE 103 and 102 */}
-
-          <div className=" flex flex-col justify-center align-center ">
-          <div className=" flex justify-center align-center mb-4 mt-12 ">
-              
-              <div className="text-3xl"><AiOutlineArrowDown /></div>
-              
-              </div>
-          
-          <div className="flex justify-start align-center">
+<div className="self-center mt-12">
+  
+              <h1 className="text-3xl mb-4 font-Tilt">Breadth courses </h1></div>
+              <p className="text-md mb-4 self-center">Students must complete three courses from these options.</p>
+              <div className="p-2 flex justify-content align-center mt-12">
+                  </div>
 
 
-          <div >
-          <ClassCard
-          Code="CSE 102 "
-          Name ="Introduction to Analysis of Algorithms
-          "
-          Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-102"
-          Level = "4.5  "
-          PreReqs= "Prerequisite(s): CSE 101."
-          QO="Quarter Offered: Fall, Winter, Spring"
-          />
-          </div>
 
-          <div className ="ml-16">
-          <ClassCard
-          Code="CSE 103"
-          Name ="Computational Models"
-          Link = "https://ucsc.smartcatalogiq.com/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-103"
-          Level = "4.5"
-          PreReqs= "Prerequisite(s): CSE 101."
-          QO="Quarter Offered: Fall, Winter, Spring"
-          />
-          </div>
-
-          </div>
-          
-          </div>
-          {/* End of CSE 102 and CSE 103 */}
-          
-
-          {/* Start of CSE 112 and 114 */}
-
-          <div className="p-2 flex justify-content align-center mt-12">
-          <ClassCard
-              Code="CSE 112"
-              Name ="Comparative Programming Languages"
-              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-112"
-              Level = "3.5"
-              PreReqs= "Prerequisite(s): CSE 101."
-              />
-
-          <div className="text-3xl ml-4 self-center">
-          OR
-          </div>
-
-          <div className ="ml-4">
-          
-          <ClassCard
-              Code="CSE 114"
-              Name ="Foundations of Programming Languages"
-              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-114A"
-              Level = "3.5"
-              PreReqs= "Prerequisite(s): CSE 101."
-              QO="Quarter Offered: Fall, Winter, Spring"
-              />
-          </div>
-              
-          </div>
-          {/* End of CSE 112 and CSE 114 */}
-
-          {/* Start of CSE 116 */}
-          <div className=" flex flex-col justify-center align-center ">
-          <div className=" flex justify-center align-center mt-4">
-              
-              
-              <div className="text-3xl ">OR</div>
-              
-              </div>
-          
-          <div className="flex justify-center align-center">
-
-          <div className =" mt-4">
-          <ClassCard
-          Code="CSE 116"
-          Name ="Introduction to Functional Programming"
-          Link = "https://ucsc.smartcatalogiq.com/en/2019-2020/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-116"
-          Level = "3.5  "
-          PreReqs= "Prerequisite(s): CMPS 101 or CSE 101."
-          QO="Quarter Offered: Fall"
-          />
-          </div>
-          </div>
-          </div>
-          
-          {/* End of CSE 116 */}
-
-
-          {/* Start of CSE 130 and 131 */}
-
-          <div className="p-2 flex justify-content align-center mt-12">
-          <ClassCard
-              Code="CSE 130"
-              Name ="Principles of Computer Systems Design"
-              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-130"
-              Level = "4.5"
-              PreReqs= "Prerequisite(s): CSE 12; and CSE 101, or CSE 15 and CSE 15L; and knowledge of C programming language."
-              QO="Quarter Offered: Fall, Winter, Spring"
-              />
-
-          <div className="text-3xl ml-4 self-center">
-          OR
-          </div>
-
-          <div className ="ml-4">
-          
-          <ClassCard
-              Code="CSE 131"
-              Name ="Introduction to Operating Systems
-              "
-              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-114A"
-              Level = "4.5"
-              PreReqs= "Prerequisite(s): CSE 101 and CSE 120"
-              />
-          </div>
-              
-          </div>
-          {/* End of CSE 130 and 131 */}
-
-
-          {/* Start of CSE 107 and Stat 131 */}
-
-          <div className="p-2 flex justify-content align-center mt-12 mb-4">
-          <ClassCard
-              Code="CSE 107"
-              Name ="Probability and Statistics for Engineers"
-              Link = "https://ucsc.smartcatalogiq.com/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-107"
-              Level = "3"
-              PreReqs= "Prerequisite(s): CSE 16; and AM 30 or MATH 22 or MATH 23A."
-              QO="Quarter Offered: Fall, Winter, Spring"
-              GE = "SR"
-              />
-
-          <div className="text-3xl ml-4 self-center">
-          OR
-          </div>
-
-          <div className ="ml-4">
-          
-          <ClassCard
-              Code="STAT 131"
-              Name ="Introduction to Probability Theory
-              "
-              Link = "https://ucsc.smartcatalogiq.com/en/Current/General-Catalog/Courses/STAT-Statistics/Upper-Division/STAT-131"
-              Level = "3"
-              PreReqs= "Prerequisite(s): AM 11B or ECON 11B or MATH 11B or MATH 19B or MATH 20B."
-              GE="SR"
-              QO="Quarter Offered: Fall, Winter, Spring, Summer"
-              />
-          </div>
-              
-          </div>
-          {/* End of CSE 107 and Stat 131 */}
-      {/* Divider */}
-      <Divider color="#66FCF1"/>
+<Divider color="#66FCF1"/>
           <div className="self-center mt-12">
               
               <h1 className="text-3xl mb-4 font-Tilt">Disciplinary Communication Requirement (DC)</h1>
@@ -992,6 +815,48 @@ required in major requirements. Advance planning is crucial. </p>
           
           {/* End of CSE 195 */}
           <Divider color="#66FCF1"/>
+
+          {/* Start of Upper Div Electives */}
+          <div className="self-center mt-12 mb-8">
+              <h1 className="text-3xl mb-4 font-Tilt">Upper Division Electives</h1>
+              <p className="text-md mb-4">Students must complete three additional 5-credit (or more) upper division Computer Science and Engineering (CSE)
+elective courses selected from all 5-credit (or more) upper division CSE courses numbered below 170 or between 180-189.
+At least 1 Upper Division Elective must satisfy the Comprehensive Requirement Students may substitute two of these upper division Computer Science and Engineering electives with courses from
+the list below.</p>
+
+              <p className="text-md ">
+              Courses from the
+Disciplinary Communication list cannot also be used to satisfy an Upper Division Elective.
+              </p>
+              
+          </div>
+
+          {/* Start of Upper Div Cards */}
+          <div className="p-2 flex justify-around align-center mt-12">
+          <UpperDivCardBA 
+          first = {true} />
+          
+
+          <div className ="ml-4">
+          
+          <UpperDivCardBA second={true}/>
+          </div>
+              
+          </div>
+
+           
+          <div className="p-2 flex justify-around align-center mt-12 mb-8">
+          <UpperDivCardBA third = {true}/>
+          
+
+        
+              
+          </div>
+
+
+          <Divider color="#66FCF1"/>
+
+           {/* End of Upper Div Cards */}
           <div className="self-center mt-12 mb-8">
               
               <h1 className="text-3xl mb-4 font-Tilt "> Important Note.</h1>
@@ -1004,50 +869,8 @@ required in major requirements. Advance planning is crucial. </p>
 
           <Divider color="#66FCF1"/>
 
-          <div className="self-center mt-12 mb-8">
-              <h1 className="text-3xl mb-4 font-Tilt">Upper Division Electives</h1>
-              <p className="text-md mb-4">5 credit (or more than 5 credit) upper-division computer science or computer engineering (CSE) courses with
-a course number below 170, or between 180-189, or CSE 195, or some courses from the Computational Media electives. Up to two of these electives may be replaced by some upper-division mathematics electives. </p>
-
-              <p className="text-md ">
-              Courses from the
-Disciplinary Communication list cannot also be used to satisfy an Upper Division Elective
-              </p>
-              
-          </div>
-
-          {/* Start of Upper Div Cards */}
-          <div className="p-2 flex justify-around align-center mt-12">
-          <UpperDivCard 
-          upper = {true} />
-          
-
-          <div className ="ml-4">
-          
-          <UpperDivCard  upper = {true} />
-          </div>
-              
-          </div>
-
-           
-          <div className="p-2 flex justify-around align-center mt-12 mb-8">
-          <UpperDivCard upper = {false}/>
-          
-
-          <div className ="ml-4">
-          
-          <UpperDivCard upper = {false}/>
-          </div>
-              
-          </div>
-
-           {/* End of Upper Div Cards */}
-
-
-           <Divider color="#66FCF1"/>
-
           {/* Start of Capstone Cards */}
-           <div className="self-center mt-12 flex flex-col justify-center align-center">
+          <div className="self-center mt-12 flex flex-col justify-center align-center">
               <h1 className="text-3xl mb-4 font-Tilt">Capstone Courses</h1>
               <p className="text-md mb-4 self-center">Many Capstone course options require additional prerequisites not already
 required in major requirements. Advance planning is crucial. </p>
@@ -1078,6 +901,18 @@ required in major requirements. Advance planning is crucial. </p>
           </div>
           </div>
           {/* End of Capstone Cards */}
+          <Divider color="#66FCF1"/>
+
+          
+      {/* Divider */}
+      <Divider color="#66FCF1"/>
+          
+          
+
+
+           <Divider color="#66FCF1"/>
+
+          
 
           </div>            
       
