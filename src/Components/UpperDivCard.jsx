@@ -1,39 +1,11 @@
 import * as React from 'react';
-import AspectRatio from '@mui/joy/AspectRatio';
-import Box from '@mui/joy/Box';
-import Button from '@mui/joy/Button';
-import Card from '@mui/joy/Card';
-import IconButton from '@mui/joy/IconButton';
 import Typography from '@mui/joy/Typography';
-import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
-import { CssVarsProvider, extendTheme } from '@mui/joy/styles';
-import Divider from '@mui/material/Divider';
 
-const theme = extendTheme({
-  components: {
-    JoyChip: {
-      styleOverrides: {
-        root: ({ ownerState, theme }) => ({
-          ...(ownerState.variant === 'solid' &&
-            ownerState.clickable && {
-              color: 'rgba(255 255 255 / 0.72)',
-              '&:hover': {
-                color: '#fff',
-              },
-              '&.Mui-disabled': {
-                opacity: 0.6,
-              },
-            }),
-        }),
-      },
-    },
-  },
-});
 
 const UpperDivCard = (props) => {
   return (
     <div>
-      <div className='w-[320px] border-2 p-4 rounded-2xl border-[#66FCF1] shadow-md shadow-current hover:shadow-2xl hover:shadow-[#66FCF1] duration-500' >
+      <div className='w-[320px] border-2 p-4 rounded-2xl border-[#66FCF1] shadow-custom2 hover:shadow-custom hover:translate-y-[-20px] hover:translate-x-2 duration-500' >
       <Typography level="h1" fontSize="xl" sx={{ mb: 0.5 }}>
       Any upper-division computer science or computer engineering (CSE) courses with
 a course number below 170, or between 180-189, or CSE 195 or one from the following list:

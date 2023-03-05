@@ -1,36 +1,7 @@
 import * as React from 'react';
-import AspectRatio from '@mui/joy/AspectRatio';
-import Box from '@mui/joy/Box';
 import Button from '@mui/joy/Button';
-import Card from '@mui/joy/Card';
-import IconButton from '@mui/joy/IconButton';
-import Typography from '@mui/joy/Typography';
-import BookmarkAdd from '@mui/icons-material/BookmarkAddOutlined';
-import { CssVarsProvider, extendTheme } from '@mui/joy/styles';
 import Stack from '@mui/material/Stack';
 import CircularProgress from '@mui/material/CircularProgress';
-
-
-const theme = extendTheme({
-  components: {
-    JoyChip: {
-      styleOverrides: {
-        root: ({ ownerState, theme }) => ({
-          ...(ownerState.variant === 'solid' &&
-            ownerState.clickable && {
-              color: 'rgba(255 255 255 / 0.72)',
-              '&:hover': {
-                color: '#fff',
-              },
-              '&.Mui-disabled': {
-                opacity: 0.6,
-              },
-            }),
-        }),
-      },
-    },
-  },
-});
 
 const ClassCard = (props) => {
   let v1 = (Math.min(props.Level *100 ,100))
@@ -93,7 +64,7 @@ const ClassCard = (props) => {
           href={props.Link}
           
         >
-          <a href={props.Link} target="_blank" className='border-2 p-2  border-[#66FCF1] rounded hover:bg-[#2a5e5c] duration-500 ml-4'>
+          <a href={props.Link} target="_blank" rel="noopener noreferrer" className='border-2 p-2  border-[#66FCF1] rounded hover:bg-[#2a5e5c] duration-500 ml-4'>
             Know More
             </a>
         </Button>

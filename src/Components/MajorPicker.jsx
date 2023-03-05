@@ -9,7 +9,7 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import blue from '@mui/material/colors/blue';
+
 
 const theme = createTheme({
   palette: {
@@ -30,6 +30,7 @@ export default function MajorPicker() {
 
   const handleClick = () => {
     console.info(`You clicked ${options[selectedIndex]}`);
+
   };
 
   const handleMenuItemClick = (event, index) => {
