@@ -18,7 +18,7 @@ function App() {
         
       </div>
       <div className='flex justify-center align-center mt-12'>
-      <ClassTree BA={true}/>
+      <ClassTree BS={false} BA={true}/>
       </div>
       
       
