@@ -23,7 +23,7 @@ function App() {
     // Update the remaining classes whenever the taken classes change
     const newRemainingClasses = availableClasses.filter((classObj) => {
       // Check if the class is in the taken classes array
-      const isTaken = classesTaken.some((takenClass) => takenClass.classCode === classObj.classCode);
+      const isTaken = classesTaken.some((takenClass) => takenClass.classCode === classObj.Code);
 
       // If the class is not taken, keep it in the remaining classes array
       return !isTaken;
@@ -72,7 +72,7 @@ function App() {
       <div>
       {activeComponent === 'Classes To Take' && <ClassesToTake remainingClasses={remainingClasses} major={selectedMajor}/>}
       {activeComponent === 'Roadmap' && <Roadmap  onSelectMajor={handleSelectMajor} />}
-      {activeComponent === 'ClassesTaken' && <ClassesTaken onClassesTaken={handleClassesTaken} />}
+      {activeComponent === 'ClassesTaken' && <ClassesTaken onClassesTaken={handleClassesTaken} CT ={classesTaken}/>}
       </div>
       
 

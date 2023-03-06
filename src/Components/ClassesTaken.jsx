@@ -3,7 +3,7 @@ import ClassTakenCard from './ClassTakenCard'
 import { useState } from 'react';
 
 
-const ClassesTaken = ({ onClassesTaken }) => {
+const ClassesTaken = ({ handleClassesTaken,CT }) => {
     
  const [classes, setClasses] = useState([]);
   const [classCode, setClassCode] = useState('');
@@ -15,7 +15,7 @@ const ClassesTaken = ({ onClassesTaken }) => {
     const newClasses = [...classes, { classCode, quarterTaken }];
     setClasses(newClasses);
 
-    onClassesTaken(newClasses);
+    handleClassesTaken(newClasses);
 
     // Reset the form after submission
     setClassCode('');
@@ -35,8 +35,9 @@ const ClassesTaken = ({ onClassesTaken }) => {
     const newClasses = [...classes];
     newClasses.splice(index, 1);
     setClasses(newClasses);
-    onClassesTaken(newClasses);
+    handleClassesTaken(newClasses);
   };
+  
 
   return (
     <div>
