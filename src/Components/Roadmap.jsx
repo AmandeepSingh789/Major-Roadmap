@@ -3,12 +3,12 @@ import MajorPicker from './MajorPicker';
 import ClassTree from './ClassTree';
 
 const Roadmap = () => {
-let Ba= true
-  let Bs= false
+
   const [selectedMajor, setSelectedMajor] = useState('');
 
   const handleSelect = (major) => {
     setSelectedMajor(major);
+   
   };
 
   return (
@@ -22,8 +22,9 @@ let Ba= true
         
       </div>
       <div className='flex justify-center align-center mt-12 text-[#fff]'>
-        {selectedMajor}
+        
       {/* <ClassTree BS={Bs} BA={Ba}/> */}
+      {selectedMajor && <ClassTree major={selectedMajor} />}
       </div>
     </div>
   )

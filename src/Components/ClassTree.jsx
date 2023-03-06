@@ -5,10 +5,17 @@ import UpperDivCardBS from './UpperDivCardBS'
 import UpperDivCardBA from "./UpperDivCardBA";
 import CapstoneCard from './CapstoneCard'
 
-const ClassTree = (props) => {
+const ClassTree = ({major}) => {
   return (
       <div>
-      { props.BS ? (<div className='flex justify-content align-center text-[#fff] w-[740px]'>
+        {
+            major === 'Choose A Major' ?  (
+                <div className="text-lg font-Tilt">Please select a major to see the roadmap</div>
+            ) : (
+                <div></div>
+            )
+        }
+      { major === 'Computer Science BS' ? (<div className='flex justify-content align-center text-[#fff] w-[740px]'>
       <div className="flex flex-col justify-content align-center">
           {/* Div With Qualification Courses */}
           <div className="self-center">
@@ -540,7 +547,7 @@ required in major requirements. Advance planning is crucial. </p>
     {/* BA ROADMAP  */}
     {/* ------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     ------------------------*/}
-    { props.BA ? (<div className='flex justify-content align-center text-[#fff] w-[740px]'>
+    { major === 'Computer Science BA'  ? (<div className='flex justify-content align-center text-[#fff] w-[740px]'>
       <div className="flex flex-col justify-content align-center">
           {/* Div With Qualification Courses */}
           <div className="self-center ">
