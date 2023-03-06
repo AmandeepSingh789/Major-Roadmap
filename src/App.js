@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import Roadmap from './Components/Roadmap';
 import ClassesTaken from './Components/ClassesTaken'
-
+import ClassesToTake from './Components/ClassesToTake';
 
 function App() {
   const [availableClasses, setAvailableClasses] = useState([
@@ -58,23 +58,26 @@ function App() {
       hover:border-[#66FCF1] duration-500'>
         Add Classes Taken
       </button>
-      {/* <button onClick={() => handleButtonClick('component3')}>
-        Show Component 3
-      </button> */}
+      <button onClick={() => handleButtonClick('Classes To Take')}
+      className='mx-4 border-2 border-[#fff] p-2 rounded-xl border-dashed
+      hover:border-[#66FCF1] duration-500'
+      >
+      Classes To Take
+      </button>
       </div>
       <div>
-      {/* <ClassesTaken onClassesTaken={handleClassesTaken} /> */}
+      {activeComponent === 'Classes To Take' && <ClassesToTake remainingClasses={remainingClasses} />}
       {activeComponent === 'Roadmap' && <Roadmap />}
       {activeComponent === 'ClassesTaken' && <ClassesTaken onClassesTaken={handleClassesTaken}/>}
       </div>
+      
 
-      {remainingClasses.map((classObj, index) => (
+      {/* {remainingClasses.map((classObj, index) => (
   <div key={index}>
     <p>Class Code: {classObj.classCode}</p>
     <p>Quarter Taken: {classObj.quarterTaken}</p>
   </div>
-))}
-      
+))} */}
     </div>
   );
 }
