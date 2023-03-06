@@ -10,10 +10,10 @@ function App() {
     className=" bg-[#1F2833] min-h-screen w-screen mx-auto margin-0 font-Roboto">
       <div>
       <h1 className='flex justify-center align-center text-5xl text-[#66FCF1] pt-4 font-Professional'>Major Roadmap</h1>
-      {/* <Roadmap /> */}
+      <Roadmap />
       </div>
       <div>
-      <ClassesTaken />
+      {/* <ClassesTaken /> */}
       </div>
     </div>
   );

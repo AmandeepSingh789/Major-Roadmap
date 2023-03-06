@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import MajorPicker from './MajorPicker';
 import ClassTree from './ClassTree';
 
 const Roadmap = () => {
-  let Ba= true
+let Ba= true
   let Bs= false
+  const [selectedMajor, setSelectedMajor] = useState('');
+
+  const handleSelect = (major) => {
+    setSelectedMajor(major);
+  };
+
   return (
     <div>
         
@@ -12,11 +18,12 @@ const Roadmap = () => {
         Choose Your Major
       </div>
       <div className='flex justify-center align-center mt-12'> 
-        <MajorPicker />
+        <MajorPicker onSelect={handleSelect}/>
         
       </div>
-      <div className='flex justify-center align-center mt-12'>
-      <ClassTree BS={Bs} BA={Ba}/>
+      <div className='flex justify-center align-center mt-12 text-[#fff]'>
+        {selectedMajor}
+      {/* <ClassTree BS={Bs} BA={Ba}/> */}
       </div>
     </div>
   )

@@ -9,7 +9,7 @@ import Popper from '@mui/material/Popper';
 import MenuItem from '@mui/material/MenuItem';
 import MenuList from '@mui/material/MenuList';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-
+import { useState } from 'react';
 
 const theme = createTheme({
   palette: {
@@ -23,18 +23,23 @@ const theme = createTheme({
 });
 const options = ['Choose A Major', 'Computer Science BS', 'Computer Science BA'];
 
-export default function MajorPicker() {
+export default function MajorPicker({onSelect}) {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
   const [selectedIndex, setSelectedIndex] = React.useState(0);
+  const [selectedMajor, setSelectedMajor] = useState('');
 
   const handleClick = () => {
     console.info(`You clicked ${options[selectedIndex]}`);
+    setSelectedMajor(`${options[selectedIndex]}`);
+    onSelect(`${options[selectedIndex]}`);
 
   };
 
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
+    setSelectedMajor(`${options[index]}`);
+    onSelect(`${options[index]}`);
     setOpen(false);
   };
 

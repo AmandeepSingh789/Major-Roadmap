@@ -2,7 +2,9 @@ import React from 'react'
 import ClassTakenCard from './ClassTakenCard'
 import { useState } from 'react';
 
+
 class NameForm extends React.Component {
+    
   constructor(props) {
     super(props);
     this.state = {value: ''};
@@ -17,27 +19,44 @@ class NameForm extends React.Component {
 
   handleSubmit(event) {
     alert('A name was submitted: ' + this.state.value);
+    this.setState({value: ""});
+    
     event.preventDefault();
   }
 
   render() {
     return (
+        <div >
+            <div  className='flex justify-center align -center mb-12 '>
+ 
       <form onSubmit={this.handleSubmit} className='flex flex-col '>
         <label className='text-lg text-[#fff]'>
           Class Code:
-          <input type="text" value={this.state.value} onChange={this.handleChange} className='ml-4 mb-4 ' placeholder='For e.g. CSE 20' />
+          <input type="text" value={this.state.value} onChange={this.handleChange} className='ml-4 mb-4 text-[#000000] px-2' placeholder='For e.g. CSE 20' />
         </label>
-        <input type="submit" value="Submit" className='text-lg text-[#fff]'/>
+        <input type="submit" value="Submit" className='text-lg text-[#fff] border-2 border-[#66FCF1] rounded-2xl cursor-pointer p-2 mt-4'/>
       </form>
+      </div>
+      <div className="flex justify-center align-center">
+        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  gap-12'>
+            <ClassTakenCard Code ={this.state.value}/>
+
+            
+        
+        
+        </div>
+        </div>
+      </div>
+      
     );
   }
 }
 
 
 const ClassesTaken = () => {
-
     const [code,SetCode] = useState();
     const [QT,SetQT] = useState();
+    
 
 
   return (
@@ -55,7 +74,7 @@ const ClassesTaken = () => {
 
       </div>
 
-        <div className="flex justify-center align-center">
+        {/* <div className="flex justify-center align-center">
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  gap-12'>
             <div><ClassTakenCard Code = 'CSE 20' QT ='Fall 2019'/></div>
             <div><ClassTakenCard Code = 'CSE 20' QT ='Fall 2019'/></div>
@@ -66,7 +85,7 @@ const ClassesTaken = () => {
         
         
         </div>
-        </div>
+        </div> */}
     </div>
   )
 }
