@@ -3,61 +3,38 @@ import ClassTakenCard from './ClassTakenCard'
 import { useState } from 'react';
 
 
-class NameForm extends React.Component {
-    
-  constructor(props) {
-    super(props);
-    this.state = {value: ''};
-
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-
-  handleChange(event) {
-    this.setState({value: event.target.value});
-  }
-
-  handleSubmit(event) {
-    alert('A name was submitted: ' + this.state.value);
-    this.setState({value: ""});
-    
-    event.preventDefault();
-  }
-
-  render() {
-    return (
-        <div >
-            <div  className='flex justify-center align -center mb-12 '>
- 
-      <form onSubmit={this.handleSubmit} className='flex flex-col '>
-        <label className='text-lg text-[#fff]'>
-          Class Code:
-          <input type="text" value={this.state.value} onChange={this.handleChange} className='ml-4 mb-4 text-[#000000] px-2' placeholder='For e.g. CSE 20' />
-        </label>
-        <input type="submit" value="Submit" className='text-lg text-[#fff] border-2 border-[#66FCF1] rounded-2xl cursor-pointer p-2 mt-4'/>
-      </form>
-      </div>
-      <div className="flex justify-center align-center">
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  gap-12'>
-            <ClassTakenCard Code ={this.state.value}/>
-
-            
-        
-        
-        </div>
-        </div>
-      </div>
-      
-    );
-  }
-}
-
-
 const ClassesTaken = () => {
-    const [code,SetCode] = useState();
-    const [QT,SetQT] = useState();
     
+ const [classes, setClasses] = useState([]);
+  const [classCode, setClassCode] = useState('');
+  const [quarterTaken, setQuarterTaken] = useState('');
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Handle form submission
+    // You can do any validation or processing of the class code and quarter taken here
+
+    // Add the class and quarter to the array of submitted classes
+    setClasses([...classes, { classCode, quarterTaken }]);
+
+    // Reset the form after submission
+    setClassCode('');
+    setQuarterTaken('');
+  };
+
+  const handleClassCodeChange = (event) => {
+    setClassCode(event.target.value);
+  };
+
+  const handleQuarterTakenChange = (event) => {
+    setQuarterTaken(event.target.value);
+  };
+
+  const handleDelete = (index) => {
+    const newClasses = [...classes];
+    newClasses.splice(index, 1);
+    setClasses(newClasses);
+  };
 
   return (
     <div>
@@ -69,9 +46,37 @@ const ClassesTaken = () => {
       </div>
 
       {/* Add a Class Button */}
-      <div className="flex justify-center align-center mb-12" >
-    <NameForm />
+      <div className='flex justify-center align-center text-[#fff] mt-12 text-lg mb-12 mx-5'>
+      <form onSubmit={handleSubmit} className='flex flex-col justify-center align-center ' >
+        <label className='text-xl m-4'>
+          Class code:
+          <input type="text" value={classCode} onChange={handleClassCodeChange} className='text-xl mx-5 px-2 text-[#000000]' placeholder='For Example, CSE 20' 
+          required/>
+        </label>
+        <label className='text-xl my-4'>
+          Quarter taken:
+          <input type="text" value={quarterTaken} onChange={handleQuarterTakenChange} 
+          className='text-xl mx-4 px-2 text-[#000000]' placeholder='For Example, Fall 2019'
+          required/>
+        </label>
+        <button type="submit"
+        className='border-2 rounded-2xl py-2'
+        >Submit</button>
+      </form>
+      </div>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  gap-12 mx-12' >
 
+      {classes.map((classObj, index) => (
+  <ClassTakenCard
+    key={index}
+    classCode={classObj.classCode}
+    quarterTaken={classObj.quarterTaken}
+    onDelete={() => handleDelete(index)}
+  />
+))}
+      <div>
+      
+    </div>
       </div>
 
         {/* <div className="flex justify-center align-center">
