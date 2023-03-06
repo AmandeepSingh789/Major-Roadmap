@@ -1,10 +1,16 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Roadmap from './Components/Roadmap';
 import ClassesTaken from './Components/ClassesTaken'
 
 
 function App() {
+  const [classesTaken, setClassesTaken] = useState([]);
+
+  const handleClassesTaken = (classes) => {
+    setClassesTaken(classes);
+  };
   
+
   return (
     <div 
     className=" bg-[#1F2833] min-h-screen w-screen mx-auto margin-0 font-Roboto">
@@ -13,8 +19,16 @@ function App() {
       {/* <Roadmap /> */}
       </div>
       <div>
-      <ClassesTaken />
+      <ClassesTaken onClassesTaken={handleClassesTaken} />
+
       </div>
+      {classesTaken.map((classObj, index) => (
+  <div key={index}>
+    <p>Class Code: {classObj.classCode}</p>
+    <p>Quarter Taken: {classObj.quarterTaken}</p>
+  </div>
+))}
+      
     </div>
   );
 }

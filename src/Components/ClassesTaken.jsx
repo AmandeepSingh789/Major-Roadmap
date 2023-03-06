@@ -3,7 +3,7 @@ import ClassTakenCard from './ClassTakenCard'
 import { useState } from 'react';
 
 
-const ClassesTaken = () => {
+const ClassesTaken = ({ onClassesTaken }) => {
     
  const [classes, setClasses] = useState([]);
   const [classCode, setClassCode] = useState('');
@@ -15,11 +15,15 @@ const ClassesTaken = () => {
     // You can do any validation or processing of the class code and quarter taken here
 
     // Add the class and quarter to the array of submitted classes
-    setClasses([...classes, { classCode, quarterTaken }]);
+    const newClasses = [...classes, { classCode, quarterTaken }];
+    setClasses(newClasses);
+
+    onClassesTaken(newClasses);
 
     // Reset the form after submission
     setClassCode('');
     setQuarterTaken('');
+    
   };
 
   const handleClassCodeChange = (event) => {
@@ -34,6 +38,7 @@ const ClassesTaken = () => {
     const newClasses = [...classes];
     newClasses.splice(index, 1);
     setClasses(newClasses);
+    onClassesTaken(newClasses);
   };
 
   return (
