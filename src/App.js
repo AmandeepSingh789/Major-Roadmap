@@ -61,7 +61,7 @@ function App() {
       </button>
       <button onClick={() => handleButtonClick('ClassesTaken')} className='mx-4 border-2 border-[#fff] p-2 rounded-xl border-dashed
       hover:border-[#66FCF1] duration-500'>
-        Classes Taken
+        Classes Done
       </button>
       <button onClick={() => handleButtonClick('Classes To Take')}
       className='mx-4 border-2 border-[#fff] p-2 rounded-xl border-dashed
@@ -77,12 +77,12 @@ function App() {
       </div>
       
 
-      {classesTaken.map((classObj, index) => (
+      {/* {classesTaken.map((classObj, index) => (
   <div key={index}>
     <p>Class Code: {classObj.classCode}</p>
     <p>Quarter Taken: {classObj.quarterTaken}</p>
   </div>
-))}
+))} */}
     </div>
   );
 }
