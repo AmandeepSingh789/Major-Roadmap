@@ -340,7 +340,7 @@ const ClassTree = ({major}) => {
               Code="CSE 131"
               Name ="Introduction to Operating Systems
               "
-              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-114A"
+              Link = "https://ucsc.smartcatalogiq.com/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-131"
               Level = "4.5"
               PreReqs= "Prerequisite(s): CSE 101 and CSE 120"
               />

@@ -6,18 +6,20 @@ import AllClassesData from "./Components/classes.json";
 
 
 function App() {
-  const [availableClasses, setAvailableClasses] = useState([]);
+  
   const [selectedMajor, setSelectedMajor] = useState('');
 
+   const [availableClasses, setAvailableClasses] = useState([]);
+   useEffect(() => {
+    // Load available classes from local JSON file
+    setAvailableClasses(AllClassesData);
+  }, []);
     const [remainingClasses, setRemainingClasses] = useState([]);
     const [classesTaken, setClassesTaken] = useState([]);
+
+
     const [activeComponent, setActiveComponent] = useState('');
 
-    useEffect(() => {
-      // Load available classes from local JSON file
-      setAvailableClasses(AllClassesData);
-    }, []);
-  
 
   useEffect(() => {
     // Update the remaining classes whenever the taken classes change
@@ -28,7 +30,6 @@ function App() {
       // If the class is not taken, keep it in the remaining classes array
       return !isTaken;
     });
-
     setRemainingClasses(newRemainingClasses);
   }, [classesTaken, availableClasses]);
 
@@ -76,12 +77,12 @@ function App() {
       </div>
       
 
-      {/* {remainingClasses.map((classObj, index) => (
+      {classesTaken.map((classObj, index) => (
   <div key={index}>
     <p>Class Code: {classObj.classCode}</p>
     <p>Quarter Taken: {classObj.quarterTaken}</p>
   </div>
-))} */}
+))}
     </div>
   );
 }
