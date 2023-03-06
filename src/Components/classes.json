@@ -1,1 +1,21 @@
-[  {    "code": "CLASS1",    "name": "Class One"  },  {    "code": "CLASS2",    "name": "Class Two"  },  {    "code": "CLASS3",    "name": "Class Three"  }]
+[
+    {
+      "Code": "CSE 20",
+      "Name": "Beginning Programming in Python",
+      "Link": "https://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Lower-Division/CSE-20",
+      "Level": "2",
+      "PreReqs": "Prerequisite(s):None",
+      "QO": "Quarter Offered: Fall, Winter, Spring",
+      "GE" : "General Education Code: MF"
+    },
+    {
+        "Code": "CSE 30",
+        "Name": "Programming Abstractions: Python",
+        "Link": "https://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Lower-Division/CSE-30",
+        "Level": "3",
+        "PreReqs": "Prerequisite(s): CSE 20 or BME 160; and MATH 3 or MATH 11A or MATH 19A or AM 3 or AM 11A or ECON 11A, or a score of 400 or higher on the mathematics placement examination (MPE)",
+        "QO": "Quarter Offered: Fall, Winter, Spring",
+        "GE" : ""
+      }
+    
+]

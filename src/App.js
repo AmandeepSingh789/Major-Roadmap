@@ -2,21 +2,22 @@ import React, { useState,useEffect } from 'react';
 import Roadmap from './Components/Roadmap';
 import ClassesTaken from './Components/ClassesTaken'
 import ClassesToTake from './Components/ClassesToTake';
+import AllClassesData from "./Components/classes.json";
+
 
 function App() {
-  const [availableClasses, setAvailableClasses] = useState([
-    { classCode: 'CSE 12', quarter: 'Fall 2022' },
-    { classCode: 'CSE 20', quarter: 'Fall 2022' },
-    { classCode: 'CSE 21', quarter: 'Fall 2022' },
-    { classCode: 'CSE 30', quarter: 'Fall 2022' },
-    { classCode: 'CSE 100', quarter: 'Fall 2022' },
-    // Add more classes here
-  ]);
+  const [availableClasses, setAvailableClasses] = useState([]);
   const [selectedMajor, setSelectedMajor] = useState('');
 
     const [remainingClasses, setRemainingClasses] = useState([]);
     const [classesTaken, setClassesTaken] = useState([]);
     const [activeComponent, setActiveComponent] = useState('');
+
+    useEffect(() => {
+      // Load available classes from local JSON file
+      setAvailableClasses(AllClassesData);
+    }, []);
+  
 
   useEffect(() => {
     // Update the remaining classes whenever the taken classes change
@@ -59,7 +60,7 @@ function App() {
       </button>
       <button onClick={() => handleButtonClick('ClassesTaken')} className='mx-4 border-2 border-[#fff] p-2 rounded-xl border-dashed
       hover:border-[#66FCF1] duration-500'>
-        Add Classes Taken
+        Classes Taken
       </button>
       <button onClick={() => handleButtonClick('Classes To Take')}
       className='mx-4 border-2 border-[#fff] p-2 rounded-xl border-dashed
