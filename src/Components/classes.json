@@ -1,7 +1,1 @@
-{
-    "classes":[
-        {
-            
-        }
-    ]
-}
+[  {    "code": "CLASS1",    "name": "Class One"  },  {    "code": "CLASS2",    "name": "Class Two"  },  {    "code": "CLASS3",    "name": "Class Three"  }]

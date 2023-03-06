@@ -11,10 +11,7 @@ const ClassesTaken = ({ onClassesTaken }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Handle form submission
-    // You can do any validation or processing of the class code and quarter taken here
 
-    // Add the class and quarter to the array of submitted classes
     const newClasses = [...classes, { classCode, quarterTaken }];
     setClasses(newClasses);
 
@@ -84,18 +81,6 @@ const ClassesTaken = ({ onClassesTaken }) => {
     </div>
       </div>
 
-        {/* <div className="flex justify-center align-center">
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  gap-12'>
-            <div><ClassTakenCard Code = 'CSE 20' QT ='Fall 2019'/></div>
-            <div><ClassTakenCard Code = 'CSE 20' QT ='Fall 2019'/></div>
-            <div><ClassTakenCard Code = 'CSE 20' QT ='Fall 2019'/></div>
-            <div><ClassTakenCard Code = 'CSE 20' QT ='Fall 2019'/></div>
-
-            
-        
-        
-        </div>
-        </div> */}
     </div>
   )
 }
