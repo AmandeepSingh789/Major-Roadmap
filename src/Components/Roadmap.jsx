@@ -2,12 +2,13 @@ import React, { useState } from 'react'
 import MajorPicker from './MajorPicker';
 import ClassTree from './ClassTree';
 
-const Roadmap = () => {
+const Roadmap = ({ onSelectMajor }) => {
 
   const [selectedMajor, setSelectedMajor] = useState('');
 
   const handleSelect = (major) => {
     setSelectedMajor(major);
+    onSelectMajor(major);
    
   };
 

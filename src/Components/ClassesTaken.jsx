@@ -42,6 +42,7 @@ const ClassesTaken = ({ onClassesTaken }) => {
     <div>
         <div className="flex justify-center align-center text-[#fff] mt-12 text-3xl font-Tilt">
         Classes Taken
+        
       </div>
       <div className="flex justify-center align-center text-[#fff] mt-12 text-lg mb-12 mx-5">
           <p> Add the classes you have taken so far and the quarter you have taken them in</p>

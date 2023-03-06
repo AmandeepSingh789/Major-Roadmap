@@ -12,6 +12,7 @@ function App() {
     { classCode: 'CSE 100', quarter: 'Fall 2022' },
     // Add more classes here
   ]);
+  const [selectedMajor, setSelectedMajor] = useState('');
 
     const [remainingClasses, setRemainingClasses] = useState([]);
     const [classesTaken, setClassesTaken] = useState([]);
@@ -38,6 +39,9 @@ function App() {
     setActiveComponent(componentName);
   };
 
+  const handleSelectMajor = (major) => {
+    setSelectedMajor(major);
+  };
 
   return (
     <div 
@@ -45,7 +49,6 @@ function App() {
       <div>
         
       <h1 className='flex justify-center align-center  text-3xl md:text-5xl text-[#66FCF1] pt-4 font-Professional '>Major Roadmap</h1>
-      {/* <Roadmap /> */}
       
       </div>
 
@@ -66,9 +69,9 @@ function App() {
       </button>
       </div>
       <div>
-      {activeComponent === 'Classes To Take' && <ClassesToTake remainingClasses={remainingClasses} />}
-      {activeComponent === 'Roadmap' && <Roadmap />}
-      {activeComponent === 'ClassesTaken' && <ClassesTaken onClassesTaken={handleClassesTaken}/>}
+      {activeComponent === 'Classes To Take' && <ClassesToTake remainingClasses={remainingClasses} major={selectedMajor}/>}
+      {activeComponent === 'Roadmap' && <Roadmap  onSelectMajor={handleSelectMajor} />}
+      {activeComponent === 'ClassesTaken' && <ClassesTaken onClassesTaken={handleClassesTaken} />}
       </div>
       
 

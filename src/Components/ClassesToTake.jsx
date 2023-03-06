@@ -1,10 +1,11 @@
 import React from 'react'
 
-const ClassesToTake = (props) => {
-    const { remainingClasses } = props;
+const ClassesToTake = ({remainingClasses, major}) => {
+    // const { remainingClasses } = remainingClasses;
     
     return (
       <div>
+          {major}
         {remainingClasses.map((classObj, index) => (
           <div key={index}>
             <p>Class Code: {classObj.classCode}</p>
