@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import Roadmap from './Components/Roadmap';
-import ClassesTaken from './Components/ClassesTaken'
+import AddClassesTaken from './Components/AddClassesTaken'
 import ClassesToTake from './Components/ClassesToTake';
 import AllClassesData from "./Components/classes.json";
 
@@ -14,23 +14,23 @@ function App() {
     // Load available classes from local JSON file
     setAvailableClasses(AllClassesData);
   }, []);
+  
     const [remainingClasses, setRemainingClasses] = useState([]);
     const [classesTaken, setClassesTaken] = useState([]);
-
-
     const [activeComponent, setActiveComponent] = useState('');
+    
 
 
   useEffect(() => {
-    // Update the remaining classes whenever the taken classes change
-    const newRemainingClasses = availableClasses.filter((classObj) => {
-      // Check if the class is in the taken classes array
+  
+      const newRemainingClasses = availableClasses.filter((classObj) => {
+      
       const isTaken = classesTaken.some((takenClass) => takenClass.classCode === classObj.Code);
 
-      // If the class is not taken, keep it in the remaining classes array
       return !isTaken;
     });
     setRemainingClasses(newRemainingClasses);
+
   }, [classesTaken, availableClasses]);
 
 
@@ -71,18 +71,23 @@ function App() {
       </button>
       </div>
       <div>
-      {activeComponent === 'Classes To Take' && <ClassesToTake remainingClasses={remainingClasses} major={selectedMajor}/>}
+      
       {activeComponent === 'Roadmap' && <Roadmap  onSelectMajor={handleSelectMajor} />}
-      {activeComponent === 'ClassesTaken' && <ClassesTaken onClassesTaken={handleClassesTaken} CT ={classesTaken}/>}
+
+      {activeComponent === 'ClassesTaken' && <AddClassesTaken onClassesTaken={handleClassesTaken} CT ={classesTaken}/>}
+
+
+      {activeComponent === 'Classes To Take' && <ClassesToTake remainingClasses={remainingClasses} major={selectedMajor}/>}
+
       </div>
       
 
-      {/* {classesTaken.map((classObj, index) => (
+      {classesTaken.map((classObj, index) => (
   <div key={index}>
     <p>Class Code: {classObj.classCode}</p>
     <p>Quarter Taken: {classObj.quarterTaken}</p>
   </div>
-))} */}
+))}
     </div>
   );
 }

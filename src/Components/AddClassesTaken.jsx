@@ -2,7 +2,7 @@ import ClassTakenCard from './ClassTakenCard'
 import { useState } from 'react';
 
 
-const ClassesTaken = ({ onClassesTaken ,CT }) => {
+const AddClassesTaken = ({ onClassesTaken ,CT }) => {
     
  const [classes, setClasses] = useState([]);
   const [classCode, setClassCode] = useState('');
@@ -90,4 +90,4 @@ onDelete={() => handleDelete(index)}
   )
 }
 
-export default ClassesTaken
+export default AddClassesTaken
