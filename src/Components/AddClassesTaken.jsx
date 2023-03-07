@@ -1,5 +1,5 @@
 import ClassTakenCard from './ClassTakenCard'
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 
 const AddClassesTaken = ({ onClassesTaken ,CT }) => {
@@ -8,6 +8,14 @@ const AddClassesTaken = ({ onClassesTaken ,CT }) => {
   const [classCode, setClassCode] = useState('');
   const [quarterTaken, setQuarterTaken] = useState('');
 
+  useEffect(() => {
+    // Retrieve saved classes from localStorage, if any
+    const savedClasses = JSON.parse(localStorage.getItem('classes'));
+    if (savedClasses) {
+      setClasses(savedClasses);
+    }
+  }, []);
+  
   const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -15,6 +23,8 @@ const AddClassesTaken = ({ onClassesTaken ,CT }) => {
     setClasses(newClasses);
 
     onClassesTaken(newClasses);
+
+    localStorage.setItem('classes', JSON.stringify(newClasses));
 
     // Reset the form after submission
     setClassCode('');
@@ -35,6 +45,7 @@ const AddClassesTaken = ({ onClassesTaken ,CT }) => {
     newClasses.splice(index, 1);
     setClasses(newClasses);
     onClassesTaken(newClasses);
+    localStorage.setItem('classes', JSON.stringify(newClasses));
   };
   
 

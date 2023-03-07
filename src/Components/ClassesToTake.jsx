@@ -26,7 +26,7 @@ const ClassesToTake = ({remainingClasses, major}) => {
       setTotalClasses(newTotalClasses);
       
       
-    }, [major,remainingClasses]);
+    }, [major,remainingClasses,remainingClassesLength]);
     
     return (
       <div>

@@ -82,12 +82,6 @@ function App() {
       </div>
       
 
-      {classesTaken.map((classObj, index) => (
-  <div key={index}>
-    <p>Class Code: {classObj.classCode}</p>
-    <p>Quarter Taken: {classObj.quarterTaken}</p>
-  </div>
-))}
     </div>
   );
 }
