@@ -1,4 +1,4 @@
 # Major Roadmap
 
-## To - Do
-    Change BG to img and make it a bit opaque.
+## Deployment
+Check out the live version of the web app on [Here](https://major-roadmap.netlify.app/).
