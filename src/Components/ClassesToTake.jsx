@@ -1,6 +1,5 @@
 import React,{useState,useEffect} from 'react'
 import ClassCard from './ClassCard';
-import PropTypes from 'prop-types';
 import LinearProgress from '@mui/material/LinearProgress';
 
 const ClassesToTake = ({remainingClasses, major}) => {
@@ -31,7 +30,7 @@ const ClassesToTake = ({remainingClasses, major}) => {
       // Update the state variable `totalClasses`
       setTotalClasses(newTotalClasses);
      
-    }, [major,remainingClasses,setremainingClassesLength]);
+    }, [major,remainingClasses.length,setremainingClassesLength,remainingClassesLength]);
     
     return (
       
