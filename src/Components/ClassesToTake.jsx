@@ -26,10 +26,15 @@ const ClassesToTake = ({remainingClasses, major}) => {
       setTotalClasses(newTotalClasses);
       
       
-    }, [major,remainingClasses,remainingClassesLength]);
+    }, [major,remainingClasses,setremainingClassesLength]);
     
     return (
       <div>
+      
+      {
+             major === 'Choose A Major' ? (<div className="text-lg font-Tilt">Please select a major to see the classes left.</div>) : (
+              
+              <div>
            <div className="flex flex-col justify-center align-center text-[#fff] mt-12 text-lg md:text-3xl font-Tilt mb-12">
         <div className="self-center ">{major}</div>
         <div className="self-center">
@@ -37,9 +42,12 @@ const ClassesToTake = ({remainingClasses, major}) => {
         </div>
         
       </div>
+      <div>
       <p className="flex justify-center align-center text-[#fff] mt-12 text-xl mb-12 mx-12">
         This is a list of all potential classes you might have left. For specifics regarding upper division, capstone or breadth courses and the order of the courses, Please check the roadmap for your major.
       </p>
+      </div>
+      
       <div className="flex justify-center align-center" >
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  xl:grid-cols-4  gap-12 text-[#fff] justify-self-center mx-auto'>
           {remainingClasses.map((classObj, index) => (
@@ -56,10 +64,13 @@ const ClassesToTake = ({remainingClasses, major}) => {
         ))}
           </div>
       </div>
-          
-        
       </div>
-    );
+                
+             )
+      }
+      </div>
+      
+    )
   
 }
 
