@@ -52,7 +52,7 @@ const AddClassesTaken = ({ onClassesTaken ,CT }) => {
   return (
     <div>
         <div className="flex justify-center align-center text-[#fff] mt-12 text-3xl font-Tilt">
-        Classes Done
+        Classes Completed
         
       </div>
       <div className="flex justify-center align-center text-[#fff] mt-12 text-lg mb-12 mx-5">

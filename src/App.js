@@ -61,13 +61,13 @@ function App() {
       </button>
       <button onClick={() => handleButtonClick('ClassesTaken')} className='mx-4 border-2 border-[#fff] p-2 rounded-xl border-dashed
       hover:border-[#66FCF1] duration-500'>
-        Classes Done
+        Classes Completed
       </button>
       <button onClick={() => handleButtonClick('Classes To Take')}
       className='mx-4 border-2 border-[#fff] p-2 rounded-xl border-dashed
-      hover:border-[#66FCF1] duration-500'
+      hover:border-[#66FCF1] duration-500 '
       >
-      Classes To Take
+      Classes Left
       </button>
       </div>
       <div>

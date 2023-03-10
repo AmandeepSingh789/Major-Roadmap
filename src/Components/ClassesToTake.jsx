@@ -38,7 +38,8 @@ const ClassesToTake = ({remainingClasses, major}) => {
       <div>
       
       {
-             major === 'Choose A Major' ? (<div className="text-lg font-Tilt">Please select a major to see the classes left.</div>) : (
+             major === 'Choose A Major' ? (<div className="flex flex-col justify-center align-center text-[#fff] mt-12 text-lg md:text-xl font-Tilt mb-12 self-center">
+               <p className="self-center ">Please select a major to see the classes left.</p> </div>) : (
               
               <div>
            <div className="flex flex-col justify-center align-center text-[#fff] mt-12 text-lg md:text-3xl font-Tilt mb-12">
@@ -46,11 +47,11 @@ const ClassesToTake = ({remainingClasses, major}) => {
         <div className="self-center">
         {major  ? (<p >You have {totalClasses} C.S. classes left to take.</p>) : (null)}
         
-        {major === 'Computer Science BS' ? (<div className='mt-4 justify-center align-center flex '>
+        {major === 'Computer Science BS' ? (<div className='mt-4'>
 
         <LinearProgress variant="determinate" color="inherit" value={(progressBar/22) *100} />
         
-        <div className='mt-4 justify-center align-center'>{((progressBar/22) *100).toFixed(2)}% </div>
+        <div className='mt-4 flex justify-center align-center'>{((progressBar/22) *100).toFixed(2)}% </div>
 
         
     </div>) : (null)}
