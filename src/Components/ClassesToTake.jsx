@@ -58,7 +58,7 @@ const ClassesToTake = ({remainingClasses, major}) => {
     {major === 'Computer Science BA' ? (<div className='mt-4'>
         <LinearProgress variant="determinate" color="inherit" value={(progressBar/17) *100} />
         
-        <div className='mt-4 flex justify-center align-center center-self self-center'>{((progressBar/17) *100).toFixed(2)}% </div>
+        <div className='mt-4 flex justify-center align-center  self-center'>{((progressBar/17) *100).toFixed(2)}% </div>
     </div>) : (null)}
 
        

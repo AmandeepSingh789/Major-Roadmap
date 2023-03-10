@@ -15,7 +15,7 @@ const ClassTree = ({major}) => {
                 <div></div>
             )
         }
-      { major === 'Computer Science BS' ? (<div className='flex justify-content align-center text-[#fff] md:w-[740px]'>
+      { major === 'Computer Science BS' ? (<div className='flex justify-center align-center text-[#fff] md:w-[740px]'>
       <div className="hidden md:block flex flex-col justify-end align-center">
           {/* Div With Qualification Courses */}
           <div className="self-center flex flex-col justify-end align-end">
@@ -24,7 +24,7 @@ const ClassTree = ({major}) => {
 
           {/* Start of Div With CSE 20 AND CSE 30 */}
           
-          <div className="p-2 flex justify-content align-center mb-4">
+          <div className="p-2 flex justify-center align-center mb-4">
           <ClassCard
               Code="CSE 20"
               Name ="Beginning Programming in Python"
@@ -55,7 +55,7 @@ const ClassTree = ({major}) => {
           {/* End of Div With CSE 20 AND CSE 30 */}
 
       {/* Start of Div With 19A and 19B */}
-      <div className="p-2 flex justify-content align-center">
+      <div className="p-2 flex justify-center align-center">
           <div>
           <ClassCard
           Code="Math 19A"
@@ -89,7 +89,7 @@ const ClassTree = ({major}) => {
 
       {/* Start of Div With 16 and AM -30*/}
       <div className=" flex flex-col justify-center align-center ">
-          <div className=" flex justify-content align-center mb-4 mt-12 ">
+          <div className=" flex justify-center align-center mb-4 mt-12 ">
               
               <div className="text-3xl ml-[20%]"><AiOutlineArrowDown /></div>
               <div className="text-3xl ml-[50%]"><AiOutlineArrowDown /></div>
@@ -130,7 +130,7 @@ const ClassTree = ({major}) => {
 
       {/* Start of Div With Math 23A */}
       <div className=" flex flex-col justify-center align-center ">
-          <div className=" flex justify-content align-center mt-4">
+          <div className=" flex justify-center align-center mt-4">
               
               
               <div className="text-3xl ml-[72%]">OR</div>
@@ -159,7 +159,7 @@ const ClassTree = ({major}) => {
 
           {/* Start of Div With CSE 12 AND CSE 13 */}
           
-          <div className="p-2 flex justify-content align-center mt-12 mb-12">
+          <div className="p-2 flex justify-center align-center mt-12 mb-12">
           <ClassCard
               Code="CSE12"
               Name ="Computer Systems and Assembly Language"
@@ -263,7 +263,7 @@ const ClassTree = ({major}) => {
 
           {/* Start of CSE 112 and 114 */}
 
-          <div className="p-2 flex justify-content align-center mt-12">
+          <div className="p-2 flex justify-center align-center mt-12">
           <ClassCard
               Code="CSE 112"
               Name ="Comparative Programming Languages"
@@ -320,7 +320,7 @@ const ClassTree = ({major}) => {
 
           {/* Start of CSE 130 and 131 */}
 
-          <div className="p-2 flex justify-content align-center mt-12">
+          <div className="p-2 flex justify-center align-center mt-12">
           <ClassCard
               Code="CSE 130"
               Name ="Principles of Computer Systems Design"
@@ -352,7 +352,7 @@ const ClassTree = ({major}) => {
 
           {/* Start of CSE 107 and Stat 131 */}
 
-          <div className="p-2 flex justify-content align-center mt-12 mb-4">
+          <div className="p-2 flex justify-center align-center mt-12 mb-4">
           <ClassCard
               Code="CSE 107"
               Name ="Probability and Statistics for Engineers"
@@ -394,7 +394,7 @@ const ClassTree = ({major}) => {
 
           {/* Start of CSE 115A and CSE 185 */}
 
-          <div className="p-2 flex justify-content align-center mt-12">
+          <div className="p-2 flex justify-center align-center mt-12">
           <ClassCard
               Code="CSE 115A"
               Name ="Introduction to Software Engineering"
@@ -546,7 +546,7 @@ required in major requirements. Advance planning is crucial. </p>
 
           {/* Start of Div With CSE 20 AND CSE 30 */}
           
-          <div className="p-2 flex flex-col justify-content align-end mb-4">
+          <div className="p-2 flex flex-col justify-center align-end mb-4">
           
           <div className="my-4 self-center justify-self-center ">
           <ClassCard
@@ -1098,8 +1098,8 @@ required in major requirements. Advance planning is crucial. </p>
     {/* BA ROADMAP  */}
     {/* ------------ ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     ------------------------*/}
-    { major === 'Computer Science BA'  ? (<div className='flex justify-content align-center text-[#fff] md:w-[740px]'>
-      <div className="hidden md:block flex flex-col justify-content align-center">
+    { major === 'Computer Science BA'  ? (<div className='flex justify-center align-center text-[#fff] md:w-[740px]'>
+      <div className="hidden md:block flex flex-col justify-center align-center">
           {/* Div With Qualification Courses */}
           <div className="self-center flex flex-col">
           <h1 className="text-3xl mb-4 font-Tilt flex justify-center">Computer Science BA</h1>
@@ -1107,7 +1107,7 @@ required in major requirements. Advance planning is crucial. </p>
 
           {/* Start of Div With CSE 20 AND CSE 30 */}
           
-          <div className="p-2 flex justify-content align-center mb-4">
+          <div className="p-2 flex justify-center align-center mb-4">
           <ClassCard
               Code="CSE 20"
               Name ="Beginning Programming in Python"
@@ -1138,7 +1138,7 @@ required in major requirements. Advance planning is crucial. </p>
           {/* End of Div With CSE 20 AND CSE 30 */}
 
       {/* Start of Div With 19A and 19B */}
-      <div className="p-2 flex justify-content align-center">
+      <div className="p-2 flex justify-center align-center">
           <div>
           <ClassCard
           Code="Math 19A"
@@ -1172,7 +1172,7 @@ required in major requirements. Advance planning is crucial. </p>
 
       {/* Start of Div With 16 and AM -30*/}
       <div className=" flex flex-col justify-center align-center ">
-          <div className=" flex justify-content align-center mb-4 mt-12 ">
+          <div className=" flex justify-center align-center mb-4 mt-12 ">
               
               <div className="text-3xl ml-[20%]"><AiOutlineArrowDown /></div>
               {/* <div className="text-3xl ml-[50%]"><AiOutlineArrowDown /></div> */}
@@ -1213,7 +1213,7 @@ required in major requirements. Advance planning is crucial. </p>
 
       {/* Start of Div With Math 23A */}
       <div className=" flex flex-col justify-center align-center ">
-          <div className=" flex justify-content align-center mt-4">
+          <div className=" flex justify-center align-center mt-4">
               
               
               <div className="text-3xl ml-[72%] mt-4">OR</div>
@@ -1243,7 +1243,7 @@ required in major requirements. Advance planning is crucial. </p>
 
           {/* Start of Div With CSE 12 AND CSE 13 */}
           
-          <div className="p-2 flex justify-content align-center mt-12 mb-12">
+          <div className="p-2 flex justify-center align-center mt-12 mb-12">
           <ClassCard
               Code="CSE12"
               Name ="Computer Systems and Assembly Language"
@@ -1316,7 +1316,7 @@ required in major requirements. Advance planning is crucial. </p>
               />
                   
                   </div>
-                  <div className="center-self justify-self-center mb-4">
+                  <div className=" justify-self-center mb-4">
                   <ClassCard
               Code="CSE 103A"
               Name ="Computational Models"
@@ -1343,7 +1343,7 @@ required in major requirements. Advance planning is crucial. </p>
               />
                   
                   </div>
-                  <div className="center-self justify-self-center mb-4">
+                  <div className=" justify-self-center mb-4">
                   <ClassCard
               Code="CSE 112"
               Name ="Comparative Programming Languages"
@@ -1367,7 +1367,7 @@ required in major requirements. Advance planning is crucial. </p>
               />
                   
                   </div>
-                  <div className="center-self justify-self-center mb-4">
+                  <div className=" justify-self-center mb-4">
                   <ClassCard
                     Code="CSE 120"
                     Name ="Computer Architecture"
@@ -1422,7 +1422,7 @@ required in major requirements. Advance planning is crucial. </p>
               />
                   
                   </div>
-                  <div className="center-self justify-self-center mb-4">
+                  <div className=" justify-self-center mb-4">
                   <ClassCard
                     Code="CSE 138"
                     Name ="Distributed Systems"
@@ -1449,7 +1449,7 @@ required in major requirements. Advance planning is crucial. </p>
               />
                   
                   </div>
-                  <div className="center-self justify-self-center mb-4">
+                  <div className=" justify-self-center mb-4">
                   <ClassCard
                     Code="CSE 142"
                     Name ="Machine Learning"
@@ -1475,7 +1475,7 @@ required in major requirements. Advance planning is crucial. </p>
                     />
                   
                   </div>
-                  <div className="center-self justify-self-center mb-8">
+                  <div className=" justify-self-center mb-8">
                   <ClassCard
                     Code="CSE 160"
                     Name ="Introduction to Computer Graphics"
@@ -1513,7 +1513,7 @@ required in major requirements. Advance planning is crucial. </p>
 
           {/* Start of CSE 115A and CSE 185 */}
 
-          <div className="p-2 flex justify-content align-center mt-12">
+          <div className="p-2 flex justify-center align-center mt-12">
           <ClassCard
               Code="CSE 115A"
               Name ="Introduction to Software Engineering"
@@ -1669,15 +1669,15 @@ required in major requirements. Advance planning is crucial. </p>
 
           </div>
 
-          <div className="block md:hidden flex flex-col justify-content align-center">
+          <div className="block md:hidden flex flex-col justify-center align-center">
           {/* Div With Qualification Courses */}
           <div className="self-center ">
-          <h1 className="text-3xl mb-4 font-Tilt center-self justify-self-auto">Computer Science BA</h1>
+          <h1 className="text-3xl mb-4 font-Tilt  justify-self-auto">Computer Science BA</h1>
               <h1 className="text-3xl mb-4 font-Tilt">Qualification Courses</h1></div>
 
           {/* Start of Div With CSE 20 AND CSE 30 */}
           
-          <div className="p-2 flex flex-col justify-content align-end mb-4">
+          <div className="p-2 flex flex-col justify-center align-end mb-4">
           
           <div className="my-4 self-center justify-self-center ">
           <ClassCard
@@ -1711,7 +1711,7 @@ required in major requirements. Advance planning is crucial. </p>
           {/* End of Div With CSE 20 AND CSE 30 */}
 
       {/* Start of Div With 19A and 19B */}
-      <div className="p-2 flex flex-col justify-content align-end mb-4">
+      <div className="p-2 flex flex-col justify-center align-end mb-4">
           <div className="my-4 self-center justify-self-center ">
           <ClassCard
           Code="Math 19A"
@@ -1744,14 +1744,14 @@ required in major requirements. Advance planning is crucial. </p>
       {/* End of Div With 19A and 19B */}
 
       {/* Start of Div With 16 and AM 10*/}
-      <div className="p-2 flex flex-col justify-content align-end mb-4">
-          <div className="p-2 flex flex-col justify-content align-end mb-4">
+      <div className="p-2 flex flex-col justify-center align-end mb-4">
+          <div className="p-2 flex flex-col justify-center align-end mb-4">
               
               <div className="text-3xl self-center"><AiOutlineArrowDown /></div>
               
               </div>
           
-          <div className=" flex flex-col justify-content align-end mb-4">
+          <div className=" flex flex-col justify-center align-end mb-4">
           
           <div className="my-4 self-center justify-self-center ">
           <ClassCard
@@ -1784,15 +1784,15 @@ required in major requirements. Advance planning is crucial. </p>
       {/* End of Div With 16 and AM 30*/}
 
       {/* Start of Div With Math 23A */}
-      <div className="flex flex-col justify-content align-end mb-4">
-          <div className="flex flex-col justify-content align-end mb-4]">
+      <div className="flex flex-col justify-center align-end mb-4">
+          <div className="flex flex-col justify-center align-end mb-4">
               
               
               <div className="text-3xl self-center mt-4">OR</div>
               
               </div>
           
-          <div className=" flex flex-col justify-content align-end mb-4">
+          <div className=" flex flex-col justify-center align-end mb-4">
 
           <div className="my-4 self-center justify-self-center ">
           <ClassCard
@@ -1815,7 +1815,7 @@ required in major requirements. Advance planning is crucial. </p>
 
           {/* Start of Div With CSE 12 AND CSE 13 */}
           
-          <div className="p-2 flex flex-col justify-content align-end mb-4"> 
+          <div className="p-2 flex flex-col justify-center align-end mb-4"> 
           <div className="my-4 self-center justify-self-center ">
           <ClassCard
               Code="CSE12"
@@ -1879,7 +1879,7 @@ required in major requirements. Advance planning is crucial. </p>
               <h1 className="text-2xl mb-4 font-Tilt">Breadth courses </h1>
               </div>
               <p className="text-xl mb-4 self-center">Students must complete three courses from these options.</p>
-              <div className="p-2 flex flex-col justify-content align-end mb-4">
+              <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className="my-4 self-center justify-self-center ">
               <ClassCard
               Code="CSE 102"
@@ -1906,7 +1906,7 @@ required in major requirements. Advance planning is crucial. </p>
 
             
 
-                  <div className="p-2 flex flex-col justify-content align-end mb-4">
+                  <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className="my-4 self-center justify-self-center ">
               <ClassCard
               Code="CSE 110A"
@@ -1930,7 +1930,7 @@ required in major requirements. Advance planning is crucial. </p>
                   </div>
                   </div>
 
-                  <div className="p-2 flex flex-col justify-content align-end mb-4">
+                  <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className="my-4 self-center justify-self-center ">
               <ClassCard
               Code="CSE 115A"
@@ -1956,7 +1956,7 @@ required in major requirements. Advance planning is crucial. </p>
                   </div>
                   </div>
 
-                  <div className="p-2 flex flex-col justify-content align-end mb-4">
+                  <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className="my-4 self-center justify-self-center ">
               <ClassCard
               Code="CSE 130"
@@ -1985,7 +1985,7 @@ required in major requirements. Advance planning is crucial. </p>
           </div>
 
                   </div>
-                  <div className="p-2 flex flex-col justify-content align-end mb-4">
+                  <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className="my-4 self-center justify-self-center ">
               <ClassCard
               Code="CSE 132"
@@ -2012,7 +2012,7 @@ required in major requirements. Advance planning is crucial. </p>
                   </div>
 
                   
-                  <div className="p-2 flex flex-col justify-content align-end mb-4">
+                  <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className=" self-center justify-self-center ">
                   
                   <ClassCard
@@ -2039,7 +2039,7 @@ required in major requirements. Advance planning is crucial. </p>
                   </div>
                   
 
-                  <div className="p-2 flex flex-col justify-content align-end mb-4">
+                  <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className=" self-center justify-self-center ">
               <ClassCard
                     Code="CSE 143"
@@ -2063,7 +2063,7 @@ required in major requirements. Advance planning is crucial. </p>
                   </div>
                   </div>
 
-                  <div className="p-2 flex flex-col justify-content align-end mb-4">
+                  <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className="my-4 mb-12 self-center justify-self-center ">
               <ClassCard
                     Code="CSE 180"
@@ -2089,7 +2089,7 @@ required in major requirements. Advance planning is crucial. </p>
 
           {/* Start of CSE 115A and CSE 185 */}
 
-          <div className="p-2 flex flex-col justify-content align-end mb-4">
+          <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className=" self-center justify-self-center ">
               <ClassCard
               Code="CSE 115A"
@@ -2130,7 +2130,7 @@ required in major requirements. Advance planning is crucial. </p>
               
               </div>
           
-          <div className="p-2 flex flex-col justify-content align-end mb-4">
+          <div className="p-2 flex flex-col justify-center align-end mb-4">
 
           <div className="my-4 self-center justify-self-center ">
           <ClassCard
@@ -2164,7 +2164,7 @@ Disciplinary Communication list cannot also be used to satisfy an Upper Division
           </div>
 
           {/* Start of Upper Div Cards */}
-          <div className="p-2 flex flex-col justify-content align-end mb-4">
+          <div className="p-2 flex flex-col justify-center align-end mb-4">
               <div className="my-8 self-center justify-self-center ">
               <UpperDivCardBA 
           first = {true} />
@@ -2218,7 +2218,7 @@ required in major requirements. Advance planning is crucial. </p>
           <div className=" flex flex-col justify-center align-center mb-12 ">
           
           
-          <div className="p-2 flex flex-col justify-content align-end mb-4">
+          <div className="p-2 flex flex-col justify-center align-end mb-4">
 
           <div className="my-8 self-center justify-self-center ">
           <CapstoneCard 

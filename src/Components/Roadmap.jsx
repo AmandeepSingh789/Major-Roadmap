@@ -24,7 +24,6 @@ const Roadmap = ({ onSelectMajor }) => {
       </div>
       <div className='flex justify-center align-center mt-12 text-[#fff]'>
         
-      {/* <ClassTree BS={Bs} BA={Ba}/> */}
       {selectedMajor && <ClassTree major={selectedMajor} />}
       </div>
     </div>

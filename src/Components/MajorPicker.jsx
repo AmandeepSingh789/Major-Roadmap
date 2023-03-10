@@ -40,6 +40,7 @@ export default function MajorPicker({onSelect}) {
     setSelectedIndex(index);
     setSelectedMajor(`${options[index]}`);
     onSelect(`${options[index]}`);
+    console.log(selectedMajor);
     setOpen(false);
   };
 

@@ -22,7 +22,6 @@ const ClassCard = (props) => {
       <h1 className='text-xl text-[#66FCF1] md:text-2xl font-extrabold' >
         {props.Code}
       </h1>
-      {/* sx={{ mb: 0.5 }} */}
       </div>
       
       <div className='flex justify-center align-center my-4 text-lg'>{props.Name}</div>

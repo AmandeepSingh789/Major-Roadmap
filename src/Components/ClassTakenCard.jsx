@@ -1,7 +1,4 @@
 import * as React from 'react';
-import Button from '@mui/joy/Button';
-import Stack from '@mui/material/Stack';
-import CircularProgress from '@mui/material/CircularProgress';
 import CloseIcon from '@mui/icons-material/Close';
 
 const ClassTakenCard = ({ classCode, quarterTaken, onDelete }) => {
