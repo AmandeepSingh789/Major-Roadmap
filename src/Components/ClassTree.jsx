@@ -15,12 +15,12 @@ const ClassTree = ({major}) => {
                 <div></div>
             )
         }
-      { major === 'Computer Science BS' ? (<div className='flex justify-content align-center text-[#fff] w-[740px]'>
-      <div className="hidden md:block flex flex-col justify-content align-center">
+      { major === 'Computer Science BS' ? (<div className='flex justify-content align-center text-[#fff] md:w-[740px]'>
+      <div className="hidden md:block flex flex-col justify-end align-center">
           {/* Div With Qualification Courses */}
-          <div className="self-center">
-              <h1 className="text-3xl mb-4 font-Tilt center-self justify-self-auto">Computer Science BS</h1>
-              <h1 className="text-3xl mb-4 font-Tilt">Qualification Courses </h1></div>
+          <div className="self-center flex flex-col justify-end align-end">
+              <h1 className="text-3xl mb-4 font-Tilt flex justify-center">Computer Science BS</h1>
+              <h1 className="text-3xl mb-4 font-Tilt flex justify-center">Qualification Courses </h1></div>
 
           {/* Start of Div With CSE 20 AND CSE 30 */}
           
@@ -190,7 +190,7 @@ const ClassTree = ({major}) => {
           <Divider color="#66FCF1"/>
           <div className="self-center mt-12">
   
-              <h1 className="text-3xl mb-4 font-Tilt">Upper Division </h1></div>
+              <h1 className="text-3xl mb-4 font-Tilt flex justify-center">Upper Division </h1></div>
 
           {/* Start of CSE 101 and CSE 120*/}
 
@@ -387,8 +387,8 @@ const ClassTree = ({major}) => {
       <Divider color="#66FCF1"/>
           <div className="self-center mt-12">
               
-              <h1 className="text-3xl mb-4 font-Tilt">Disciplinary Communication Requirement (DC)</h1>
-              <p className="text-md mb-4">Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) Requirement. </p>
+              <h1 className="text-3xl mb-4 font-Tilt flex justify-center">Disciplinary Communication Requirement (DC)</h1>
+              <p className="text-md mb-4 flex justify-center">Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) Requirement. </p>
           </div>
           
 
@@ -451,10 +451,10 @@ const ClassTree = ({major}) => {
           <Divider color="#66FCF1"/>
           <div className="self-center mt-12 mb-8">
               
-              <h1 className="text-3xl mb-4 font-Tilt "> Important Note.</h1>
-              <p className="text-md mb-4">The capstone course can count toward 1 of the 4 required upper division electives. </p>
+              <h1 className="text-3xl mb-4 font-Tilt flex justify-center"> Important Note.</h1>
+              <p className="text-md mb-4 flex justify-center">The capstone course can count toward 1 of the 4 required upper division electives. </p>
 
-              <p className="text-md mb-4">
+              <p className="text-md mb-4 flex justify-center">
               CSE 195 can satisfy the DC requirement OR an Upper Division Elective, but NOT both
               </p>
           </div>
@@ -462,11 +462,11 @@ const ClassTree = ({major}) => {
           <Divider color="#66FCF1"/>
 
           <div className="self-center mt-12 mb-8">
-              <h1 className="text-3xl mb-4 font-Tilt">Upper Division Electives</h1>
-              <p className="text-md mb-4">5 credit (or more than 5 credit) upper-division computer science or computer engineering (CSE) courses with
+              <h1 className="text-3xl mb-4 font-Tilt flex justify-center">Upper Division Electives</h1>
+              <p className="text-md mb-4 flex justify-center">5 credit (or more than 5 credit) upper-division computer science or computer engineering (CSE) courses with
 a course number below 170, or between 180-189, or CSE 195, or some courses from the Computational Media electives. Up to two of these electives may be replaced by some upper-division mathematics electives. </p>
 
-              <p className="text-md ">
+              <p className="text-md flex justify-center">
               Courses from the
 Disciplinary Communication list cannot also be used to satisfy an Upper Division Elective
               </p>
@@ -505,11 +505,11 @@ Disciplinary Communication list cannot also be used to satisfy an Upper Division
 
           {/* Start of Capstone Cards */}
            <div className="self-center mt-12 flex flex-col justify-center align-center">
-              <h1 className="text-3xl mb-4 font-Tilt">Capstone Courses</h1>
-              <p className="text-md mb-4 self-center">Many Capstone course options require additional prerequisites not already
+              <h1 className="text-3xl mb-4 font-Tilt flex justify-center">Capstone Courses</h1>
+              <p className="text-md mb-4 self-center flex justify-center">Many Capstone course options require additional prerequisites not already
 required in major requirements. Advance planning is crucial. </p>
 
-              <p className="text-md mb-4 self-center">These courses can be used to satisfy Upper Division Electives. </p>
+              <p className="text-md mb-4 self-center flex justify-center">These courses can be used to satisfy Upper Division Electives. </p>
               
           </div>
 
@@ -538,15 +538,15 @@ required in major requirements. Advance planning is crucial. </p>
 
           </div>
 
-          <div className=" md:hidden flex flex-col justify-content align-center">
+          <div className=" md:hidden flex flex-col justify-center align-center">
           {/* Div With Qualification Courses */}
-          <div className="self-center">
-              <h1 className="text-3xl mb-4 font-Tilt center-self justify-self-auto">Computer Science BS</h1>
-              <h1 className="text-3xl mb-4 font-Tilt">Qualification Courses </h1></div>
+          <div className="flex flex-col justify-center align-center self-center">
+              <h1 className="text-3xl mb-4 font-Tilt self-center justify-self-center">Computer Science BS</h1>
+              <h1 className="text-3xl mb-4 font-Tilt self-center">Qualification Courses </h1></div>
 
           {/* Start of Div With CSE 20 AND CSE 30 */}
           
-          <div className="p-2 flex flex-col justify-end align-end mb-4">
+          <div className="p-2 flex flex-col justify-content align-end mb-4">
           
           <div className="my-4 self-center justify-self-center ">
           <ClassCard
@@ -715,9 +715,9 @@ required in major requirements. Advance planning is crucial. </p>
           </div>
           {/* End of Div With CSE 20 AND CSE 30 */}
           <Divider color="#66FCF1" />
-          <div className="self-center mt-12">
+          <div className="self-center mt-8">
   
-              <h1 className="text-3xl mb-4 font-Tilt">Upper Division </h1></div>
+              <h1 className="text-2xl mb-4 font-Tilt">Upper Division </h1></div>
 
           {/* Start of CSE 101 and CSE 120*/}
 
@@ -852,7 +852,9 @@ required in major requirements. Advance planning is crucial. </p>
 
           {/* Start of CSE 130 and 131 */}
 
-          <div className="p-2 flex justify-content align-center mt-12">
+          <div className= "flex flex-col justify-center align-center my-12">
+          
+          <div className="my-4 self-center justify-self-center ">
           <ClassCard
               Code="CSE 130"
               Name ="Principles of Computer Systems Design"
@@ -861,12 +863,14 @@ required in major requirements. Advance planning is crucial. </p>
               PreReqs= "Prerequisite(s): CSE 12; and CSE 101, or CSE 15 and CSE 15L; and knowledge of C programming language."
               QO="Quarter Offered: Fall, Winter, Spring"
               />
+          </div>
+          
 
-          <div className="text-3xl ml-4 self-center">
+          <div className="text-3xl mt-8 self-center">
           OR
           </div>
 
-          <div className ="ml-4">
+          <div className ="mt-8  self-center justify-self-center ">
           
           <ClassCard
               Code="CSE 131"
@@ -884,22 +888,25 @@ required in major requirements. Advance planning is crucial. </p>
 
           {/* Start of CSE 107 and Stat 131 */}
 
-          <div className="p-2 flex justify-content align-center mt-12 mb-4">
-          <ClassCard
-              Code="CSE 107"
-              Name ="Probability and Statistics for Engineers"
-              Link = "https://ucsc.smartcatalogiq.com/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-107"
-              Level = "3"
-              PreReqs= "Prerequisite(s): CSE 16; and AM 30 or MATH 22 or MATH 23A."
-              QO="Quarter Offered: Fall, Winter, Spring"
-              GE = "SR"
-              />
+          <div className= "flex flex-col justify-center align-center my-12">
+              <div className="my-4 self-center justify-self-center ">
+                <ClassCard
+                Code="CSE 107"
+                Name ="Probability and Statistics for Engineers"
+                Link = "https://ucsc.smartcatalogiq.com/en/Current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-107"
+                Level = "3"
+                PreReqs= "Prerequisite(s): CSE 16; and AM 30 or MATH 22 or MATH 23A."
+                QO="Quarter Offered: Fall, Winter, Spring"
+                GE = "SR"
+                />
+              </div>
+         
 
-          <div className="text-3xl ml-4 self-center">
+          <div className="text-3xl mt-8 self-center">
           OR
           </div>
 
-          <div className ="ml-4">
+          <div className ="mt-8  self-center justify-self-center ">
           
           <ClassCard
               Code="STAT 131"
@@ -917,30 +924,33 @@ required in major requirements. Advance planning is crucial. </p>
           {/* End of CSE 107 and Stat 131 */}
       {/* Divider */}
       <Divider color="#66FCF1"/>
-          <div className="self-center mt-12">
+          <div className="self-center mt-12 flex flex-col ">
               
-              <h1 className="text-3xl mb-4 font-Tilt">Disciplinary Communication Requirement (DC)</h1>
-              <p className="text-md mb-4">Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) Requirement. </p>
+              <h1 className="text-xl mb-4 self-center font-Tilt">Disciplinary Communication Requirement (DC)</h1>
+              <p className="text-lg self-center w-[400px]">Students of every major must satisfy that major's upper-division Disciplinary Communication (DC) Requirement. </p>
           </div>
           
 
           {/* Start of CSE 115A and CSE 185 */}
 
-          <div className="p-2 flex justify-content align-center mt-12">
-          <ClassCard
-              Code="CSE 115A"
-              Name ="Introduction to Software Engineering"
-              Link = "https://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-115A"
-              Level = "3.5"
-              PreReqs= "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and CSE 101 and CSE 130."
-              QO= "Fall, Winter, Spring"
-              />
+          <div className= "flex flex-col justify-center align-center my-4">
+              <div className="my-4 self-center justify-self-center ">
+                <ClassCard
+                Code="CSE 115A"
+                Name ="Introduction to Software Engineering"
+                Link = "https://ucsc.smartcatalogiq.com/current/General-Catalog/Courses/CSE-Computer-Science-and-Engineering/Upper-Division/CSE-115A"
+                Level = "3.5"
+                PreReqs= "Prerequisite(s): satisfaction of the Entry Level Writing and Composition requirements and CSE 101 and CSE 130."
+                QO= "Fall, Winter, Spring"
+                />
+              </div>
+          
 
-          <div className="text-3xl ml-4 self-center">
+          <div className="text-3xl mt-8 self-center">
           OR
           </div>
 
-          <div className ="ml-4">
+          <div className ="mt-8  self-center justify-self-center ">
           
           <ClassCard
               Code="CSE 185"
@@ -956,11 +966,11 @@ required in major requirements. Advance planning is crucial. </p>
           {/* End of CSE 115A and CSE 185 */}
 
           {/* Start of CSE 195 */}
-          <div className=" flex flex-col justify-center align-center mb-8 ">
+          <div  className= "flex flex-col justify-center align-center mb-12">
           <div className=" flex justify-center align-center mt-4">
               
               
-              <div className="text-3xl ">OR</div>
+              <div className="text-3xl mb-4 self-center">OR</div>
               
               </div>
           
@@ -981,24 +991,24 @@ required in major requirements. Advance planning is crucial. </p>
           
           {/* End of CSE 195 */}
           <Divider color="#66FCF1"/>
-          <div className="self-center mt-12 mb-8">
+          <div className="self-center mt-12 mb-8 flex flex-col">
               
-              <h1 className="text-3xl mb-4 font-Tilt "> Important Note.</h1>
-              <p className="text-md mb-4">The capstone course can count toward 1 of the 4 required upper division electives. </p>
+              <h1 className="text-2xl mb-4 font-Tilt self-center "> Important Note.</h1>
+              <p className="text-xl mb-4 self-center w-[400px]">The capstone course can count toward 1 of the 4 required upper division electives. </p>
 
-              <p className="text-md mb-4">
+              <p className="text-xl mb-4 self-center w-[400px]">
               CSE 195 can satisfy the DC requirement OR an Upper Division Elective, but NOT both
               </p>
           </div>
 
           <Divider color="#66FCF1"/>
 
-          <div className="self-center mt-12 mb-8">
-              <h1 className="text-3xl mb-4 font-Tilt">Upper Division Electives</h1>
-              <p className="text-md mb-4">5 credit (or more than 5 credit) upper-division computer science or computer engineering (CSE) courses with
+          <div className="self-center mt-12  mx-12 flex flex-col">
+              <h1 className="text-2xl mb-4 font-Tilt self-center">Upper Division Electives</h1>
+              <p className="text-xl mb-4 w-[400px] self-center">5 credit (or more than 5 credit) upper-division computer science or computer engineering (CSE) courses with
 a course number below 170, or between 180-189, or CSE 195, or some courses from the Computational Media electives. Up to two of these electives may be replaced by some upper-division mathematics electives. </p>
 
-              <p className="text-md ">
+              <p className="text-md mb-4 w-[400px] self-center ">
               Courses from the
 Disciplinary Communication list cannot also be used to satisfy an Upper Division Elective
               </p>
@@ -1006,12 +1016,15 @@ Disciplinary Communication list cannot also be used to satisfy an Upper Division
           </div>
 
           {/* Start of Upper Div Cards */}
-          <div className="p-2 flex justify-around align-center mt-12">
+          <div className= "flex flex-col justify-center align-center my-12">
+          
+          <div className="my-4 self-center justify-self-center ">
           <UpperDivCardBS 
           upper = {true} />
+              </div>
           
 
-          <div className ="ml-4">
+          <div className ="mt-8  self-center justify-self-center ">
           
           <UpperDivCardBS  upper = {true} />
           </div>
@@ -1019,11 +1032,15 @@ Disciplinary Communication list cannot also be used to satisfy an Upper Division
           </div>
 
            
-          <div className="p-2 flex justify-around align-center mt-12 mb-8">
+          <div className= "flex flex-col justify-center align-center my-12">
+          
+          <div className="my-4 self-center justify-self-center ">
           <UpperDivCardBS upper = {false}/>
+          </div>
+          
           
 
-          <div className ="ml-4">
+          <div className ="mt-8  self-center justify-self-center ">
           
           <UpperDivCardBS upper = {false}/>
           </div>
@@ -1036,12 +1053,12 @@ Disciplinary Communication list cannot also be used to satisfy an Upper Division
            <Divider color="#66FCF1"/>
 
           {/* Start of Capstone Cards */}
-           <div className="self-center mt-12 flex flex-col justify-center align-center">
-              <h1 className="text-3xl mb-4 font-Tilt">Capstone Courses</h1>
-              <p className="text-md mb-4 self-center">Many Capstone course options require additional prerequisites not already
+           <div className="self-center mt-12 flex flex-col justify-end align-center">
+              <h1 className="text-2xl mb-4 self-center font-Tilt">Capstone Courses</h1>
+              <p className="text-lg mb-4 self-center w-[400px]">Many Capstone course options require additional prerequisites not already
 required in major requirements. Advance planning is crucial. </p>
 
-              <p className="text-md mb-4 self-center">These courses can be used to satisfy Upper Division Electives. </p>
+              <p className="text-lg mb-4 self-center">These courses can be used to satisfy Upper Division Electives. </p>
               
           </div>
 
@@ -1049,9 +1066,9 @@ required in major requirements. Advance planning is crucial. </p>
           <div className=" flex flex-col justify-center align-center mb-12 ">
           
           
-          <div className="flex justify-between align-center">
+          <div className= "flex flex-col justify-center align-center my-12">
 
-          <div className =" mt-4">
+          <div className="my-4 self-center justify-self-center ">
           <CapstoneCard 
           first={true}
           />
@@ -1059,13 +1076,15 @@ required in major requirements. Advance planning is crucial. </p>
           
           </div>
 
-          <div className =" mt-4">
+          <div className="my-8 self-center justify-self-center ">
           <CapstoneCard first={false}
           />
 
           </div>
           </div>
+          <Divider color="#66FCF1"/>
           </div>
+          
           {/* End of Capstone Cards */}
 
           </div>               
