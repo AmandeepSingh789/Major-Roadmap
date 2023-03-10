@@ -1,19 +1,25 @@
 import React,{useState,useEffect} from 'react'
 import ClassCard from './ClassCard';
+import PropTypes from 'prop-types';
+import LinearProgress from '@mui/material/LinearProgress';
 
 const ClassesToTake = ({remainingClasses, major}) => {
-    // const { remainingClasses } = remainingClasses;
-    const [totalClasses, setTotalClasses] = useState()
+
+    const [totalClasses, setTotalClasses] = useState();
     const [remainingClassesLength, setremainingClassesLength] = useState(remainingClasses.length)
-   
+    const [progressBar, setprogressBar] = useState(0)
+    
     console.log(remainingClassesLength);
     function calculateTotalClasses(major,remainingClassesLength){
       console.log(major);
       
       if (major === "Computer Science BS"){
+        setprogressBar(22 - (22- (23- remainingClassesLength)))
         return (22- (23- remainingClassesLength))
+
       }
       if (major === "Computer Science BA"){
+        setprogressBar(17 - (17- (23- remainingClassesLength)))
         return (17- (23- remainingClassesLength))
       }
     }
@@ -24,11 +30,12 @@ const ClassesToTake = ({remainingClasses, major}) => {
       console.log(newTotalClasses);
       // Update the state variable `totalClasses`
       setTotalClasses(newTotalClasses);
-      
-      
+     
     }, [major,remainingClasses,setremainingClassesLength]);
     
     return (
+      
+
       <div>
       
       {
@@ -38,7 +45,24 @@ const ClassesToTake = ({remainingClasses, major}) => {
            <div className="flex flex-col justify-center align-center text-[#fff] mt-12 text-lg md:text-3xl font-Tilt mb-12">
         <div className="self-center ">{major}</div>
         <div className="self-center">
-        <p >You have {totalClasses} C.S. classes left to take.</p>
+        {major  ? (<p >You have {totalClasses} C.S. classes left to take.</p>) : (null)}
+        
+        {major === 'Computer Science BS' ? (<div className='mt-4 justify-center align-center flex '>
+
+        <LinearProgress variant="determinate" color="inherit" value={(progressBar/22) *100} />
+        
+        <div className='mt-4 justify-center align-center'>{((progressBar/22) *100).toFixed(2)}% </div>
+
+        
+    </div>) : (null)}
+    
+    {major === 'Computer Science BA' ? (<div className='mt-4'>
+        <LinearProgress variant="determinate" color="inherit" value={(progressBar/17) *100} />
+        
+        <div className='mt-4 flex justify-center align-center center-self self-center'>{((progressBar/17) *100).toFixed(2)}% </div>
+    </div>) : (null)}
+
+       
         </div>
         
       </div>
@@ -46,6 +70,7 @@ const ClassesToTake = ({remainingClasses, major}) => {
       <p className="flex justify-center align-center text-[#fff] mt-12 text-xl mb-12 mx-12">
         This is a list of all potential classes you might have left. For specifics regarding upper division, capstone or breadth courses and the order of the courses, Please check the roadmap for your major.
       </p>
+      
       </div>
       
       <div className="flex justify-center align-center" >
@@ -68,7 +93,9 @@ const ClassesToTake = ({remainingClasses, major}) => {
                 
              )
       }
+      
       </div>
+      
       
     )
   
